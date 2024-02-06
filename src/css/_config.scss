@@ -1,0 +1,28 @@
+$theme-color-1: teal;
+$theme-color-2: whitesmoke;
+
+$primary-color: #3f37c9;
+$secondary-color: #333;
+
+$heading-color: #555;
+$accent-color: orange;
+
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --theme-color-1: #{$theme-color-1};
+    --theme-color-2: #{$theme-color-2};
+    --heading-color: #{$heading-color};
+    --gradient-color-1: linear-gradient(45deg, #{$primary-color}, #{$theme-color-2} );
+    color-scheme: light dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #{$theme-color-2};
+}

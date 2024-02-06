@@ -1,0 +1,23 @@
+@use "./src/css/config" as *;
+@use "./src/css/partials" as *;
+
+.banner, .placeholder {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--gradient-color-1);
+}
+.placeholder {
+    min-height: 100%;
+}
+
+.banner img {
+    overflow: hidden;
+}
+
+footer .author { 
+    opacity: 0.6;
+    color: grey;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
