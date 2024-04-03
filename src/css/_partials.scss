@@ -1,5 +1,9 @@
 @use "config" as *;
 
+section:not(.banner) {
+  margin: 2rem auto;
+}
+
 button {
     border-radius: 8px;
     border: 1px solid transparent;
@@ -19,5 +23,25 @@ a:hover {
 }
 
 footer {
-    background-color: #{$theme-color-1};
+  background-color: #{$theme-color-1};
+
+* {
+  color: #fff;
+  }
 }
+
+h2 {
+  padding: 2rem 0;
+}
+
+ul {
+    list-style: circle;
+    li {
+      padding: 10px;
+      &:hover {
+        color: #{$primary-color};
+        scale: 1.2;
+      }
+    }
+  }
+

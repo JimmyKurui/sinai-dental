@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faPhone, faMail } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   // Map
@@ -16,7 +16,7 @@ const Footer = () => {
               width="100%"
               height="200"
               style={{ border: 0 }}
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
@@ -28,12 +28,14 @@ const Footer = () => {
                 Office #2, Plot 17, Cooper Road, Kololo (Kisementi)<br />
                 <span>Kampala, Uganda</span>
               </address>
-              <a href="tel:+256(0)776045352">
-                <FontAwesomeIcon icon={faPhone} /> +256 776 045352
-              </a>
-              <a href="mailto:sinaident@gmail.com">
-                <FontAwesomeIcon icon={faMail} /> sinaident@gmail.com
-              </a>
+              <div className="d-flex">
+                <a href="tel:+256(0)776045352" className='me-4'>
+                  <FontAwesomeIcon icon={faPhone} /> +256 776 045352
+                </a>
+                <a href="mailto:sinaident@gmail.com">
+                  <FontAwesomeIcon icon={faEnvelope} /> sinaident@gmail.com
+                </a>
+              </div>
             </div>
             <div className="col-12">
               <div className="socials mt-4 ">

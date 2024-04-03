@@ -1,19 +1,63 @@
 @use "./src/css/config" as *;
 @use "./src/css/partials" as *;
 
-.banner, .placeholder {
+/* --------------------- HERO SECTION ---------------------- */
+.banner {
     width: 100%;
-    min-height: 100vh;
-    background: var(--gradient-color-1);
+    min-height: 300px;
+    height: calc(100vh - 60px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 .placeholder {
-    min-height: 100%;
+    width: 100%;
+    min-height: 250px;
+    background-color: blue;
 }
 
 .banner img {
     overflow: hidden;
 }
 
+.banner-message {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* ------------------ Floating Button =========== */A
+.floating-button {
+    position: fixed;
+    bottom: 0;
+    right: 20%;
+    width: 30px;
+}
+
+// ===================== SERVICES PAGE ==============
+.nav.nav-tabs .nav-item .nav-link {
+    text-transform: capitalize;
+}
+
+// ===================== TEAM PAGE ===============
+
+#team-section {
+    .team-member:nth-child(even) {
+        .team-member-figure {
+            order: 2;
+        }
+    }
+}
+
+#news-gallery-section {
+    .article {
+        padding: 1rem;
+
+        &.h-25, &.h-75 {
+            height: auto;
+            min-height: max-content;
+        }
+    }
+}
+
+// ================= Footer =================
 footer .author { 
     opacity: 0.6;
     color: grey;

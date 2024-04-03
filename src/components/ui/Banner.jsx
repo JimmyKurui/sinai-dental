@@ -1,10 +1,11 @@
-const Banner = ({bannerSrc, bannerMsg}) => {
+const Banner = ({bannerImage, message}) => {
     return (
-        <section>
-            <div className="banner d-flex justify-content-center align-items-center" >
-                <div className="banner-heading">{ bannerMsg }</div>
-            </div>
-        </section>
+        <div className="banner d-flex justify-content-center align-items-center" 
+            style={bannerImage 
+                ? {backgroundImage: bannerImage} 
+                : {background: 'var(--gradient-color-1)'}} >
+            <div className="banner-message">{ message } Banner</div>
+        </div>
     )
 }
 
