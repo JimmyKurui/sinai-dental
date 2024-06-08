@@ -30,148 +30,89 @@ const Team = () => {
       <Banner message="Team" />
 
       <section id="team-section">
-        <div className="container">
           <h2 className="text-center">Meet The Team</h2>
-          <div className="row team-member">
-            <div className="team-member-figure col-12 col-md-6">
-              <img
-                src="https://via.placeholder.com/300x300"
-                alt="Team Member"
-                // className={`team-member team-member-image ${
-                //   isVisible ? "fade-in-bottom" : ""
-                // }`}
-              />
-            </div>
-            <div className="team-member-description col-12 col-md-6">
-              <h3>John Doe</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                porttitor lectus nibh.
-              </p>
-            </div>
-          </div>
-
-          <div className="row team-member">
-            <div className="team-member-figure col-12 col-md-6">
-              <img
-                src="https://via.placeholder.com/300x300"
-                alt="Team Member"
-                // className={`team-member team-member-image ${
-                //   isVisible ? "fade-in-bottom" : ""
-                // }`}
-              />
-            </div>
-            <div className="team-member-description col-12 col-md-6">
-              <h3>John Doe</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                porttitor lectus nibh.
-              </p>
-            </div>
-          </div>
-
-          <div className="row team-member">
-            <div className="team-member-figure col-12 col-md-6">
-              <img
-                src="https://via.placeholder.com/300x300"
-                alt="Team Member"
-                // className={`team-member team-member-image ${
-                //   isVisible ? "fade-in-bottom" : ""
-                // }`}
-              />
-            </div>
-            <div className="team-member-description col-12 col-md-6">
-              <h3>John Doe</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                porttitor lectus nibh.
-              </p>
-            </div>
-          </div>
-
-          <div className="row team-member">
-            <div className="team-member-figure col-12 col-md-6">
-              <img
-                src="https://via.placeholder.com/300x300"
-                alt="Team Member"
-                // className={`team-member team-member-image ${
-                //   isVisible ? "fade-in-bottom" : ""
-                // }`}
-              />
-            </div>
-            <div className="team-member-description col-12 col-md-6">
-              <h3>John Doe</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                porttitor lectus nibh.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="news-gallery-section">
+          <p className="p-4 text-center">We have a happy and motivated team at Sinai Dental Practice, sharing a common goal of achieving the highest standard of care for each of our patients. Our team includes Dentists, nurses, adminitrative assistants, IT technician and a consultant aneasthesiologist who does our sedation cases.  We believe the best way to serve our clients is through the ability to listen and care for our patients overall well being. We are always available to assist you with queries on any aspect of your dental experience.</p>
         <div className="container">
-          <div className="row">
-            <div className="col text-center">
-              {/* Temporary */}
-              <div className="sample-news-wrapper" style={{ height: '350px', overflowY: 'hidden', margin: '50px 30px 0'}}>
-                <img
-                  src="src\assets\img\team\sample-team-news-screenshot.png"
-                  alt=""
-                  width="60%"
-                />
-              </div>
-              {/* <div className="article" style={{ 
-  backgroundImage: 'url("https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center'
-}}> */}
-              {/* <img src="https://unsplash.com/photos/silhouette-of-three-women-running-on-grey-concrete-road-oGv9xIl7DkY" /> */}
+          <div className="row team-member">
+            <div className="team-member-figure col-12 col-md-6">
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="Team Member"
+                // className={`team-member team-member-image ${
+                //   isVisible ? "fade-in-bottom" : ""
+                // }`}
+              />
             </div>
-            {/* <div className="article h-75" style={{ backgroundImage: 'https://images.unsplash.com/photo-1598043596827-fd992a2f137a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hZ2F6aW5lfGVufDB8fDB8fHww'}}>article</div> */}
+            <div className="team-member-description col-12 col-md-6">
+              <h3>Dr. Rubona Matthew</h3>
+              <h4>Team leader</h4> 
+              <p>A graduate of College of Health Sciences Makerere University,  Matthew qualified with a distinction in practice of dentistry. During his studies he had an opportunity to intern at Kings College London and Queen Mary&apos;s in Belfast Ireland.</p>
+              <p>After his qualification, he went on to join the busy department of oral and maxillo-facial surgery Mulago Hospital where he worked for a number of years. Through interaction with colleagues both within the oral surgery department and several visiting surgeons from allover the world he was able to acquire and become proficient in different surgical skills. After gaining experience he then went on to set up Sinai dental in 2010.</p>
+              <p>Matthew takes on the role of clinical lead at the practice and has a special interest in  implants and  aesthetic dentistry including crowns , bridges , tooth whitening and composite fillings.</p>
+              <p>When he is not at  Sinai, he enjoys running , hiking and the  occasional video gaming.</p>
+            </div>
+          </div>
 
-            {/* <div className="col">
-              <div className="article h-75" style={{ backgroundImage: 'https://plus.unsplash.com/premium_photo-1682125304342-a49fba491087?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1hZ2F6aW5lfGVufDB8fDB8fHww'}}>article</div>
-              <div className="article h-25" style={{ backgroundImage: 'https://cdn.dribbble.com/users/1522528/screenshots/15868832/media/5a8edeb3d9e9015acb8021b25974e939.jpg?resize=320x240&vertical=center'}}>article</div>
+          <div className="row team-member">
+            <div className="team-member-figure col-12 col-md-6">
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="Team Member"
+                // className={`team-member team-member-image ${
+                //   isVisible ? "fade-in-bottom" : ""
+                // }`}
+              />
             </div>
-            <div className="col">
-              <div className="article h-25" style={{ backgroundImage: 'https://cdn.dribbble.com/users/1979832/screenshots/16040460/media/a6094dd49f0ce76a5038527f3e8c0269.png?resize=320x240&vertical=center'}}>article</div>
-              <div className="article h-75" style={{ backgroundImage: 'https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2lkJTIwY2xpbmljfGVufDB8fDB8fHww'}}>article</div>
-            </div> */}
-            {/* </div> */}
-            <nav aria-label="Page navigation example">
-              <ul className="pagination justify-content-center">
-                <li className="page-item">
-                  <a className="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#">
-                    1
-                  </a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#">
-                    2
-                  </a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#">
-                    3
-                  </a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            <div className="team-member-description col-12 col-md-6">
+              <h3>Dr. Cheptoris Ashar </h3>
+              <p>Cheptoris graduated from College of Health Sciences Makerere University in 2010.  After graduating, she went on to join International Hospital Kampala (IHK) under Dr. Ian Clark as the hospital&apos;s lead dentist. After gaining experience working with IHK she joined Sinai Dental in 2017. Cheptoris has a Post Graduate Diploma in orthodontics and dentistry with Dr. Jaques cilliers. </p>
+              <p>Cheptoris has a keen interest in orthodontics and general dentistry and is instrumental in branding and building a reputation of clinical excellence at Sinai Dental.</p>
+              <p>Cheptoris is a recreational runner, enjoys hiking and gardening when she is not working.</p>
+            </div>
+          </div>
+
+          <div className="row team-member">
+            <div className="team-member-figure col-12 col-md-6">
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="Team Member"
+                // className={`team-member team-member-image ${
+                //   isVisible ? "fade-in-bottom" : ""
+                // }`}
+              />
+            </div>
+            <div className="team-member-description col-12 col-md-6">
+              <h3>Nursing team</h3>
+              <p>
+              Our nurses ensure your comfort and well-being throughout your dental treatment . From the moment you step into our clinic, they greet you with warmth and kindness. Behind-the-Scenes our nurses are busy preparing the treatment room. They sterilize instruments, organize supplies, and create a soothing environment.
+              </p>
+              <p>
+              Nervous about dental procedures? Our nurses are experts in calming nerves. They hold your hand, explain each step, and make sure you feel safe. After your treatment, our nurses guide you through aftercare instructions. They ensure your recovery is smooth and pain-free.
+              </p>
+              <p>The best part? Our nurses celebrate your victories. When you leave with a brighter smile, they share in your joy. Remember, our nursing team is here to make your Sinai Dental experience exceptional.</p>
+            </div>
+          </div>
+
+          <div className="row team-member">
+            <div className="team-member-figure col-12 col-md-6">
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="Team Member"
+                // className={`team-member team-member-image ${
+                //   isVisible ? "fade-in-bottom" : ""
+                // }`}
+              />
+            </div>
+            <div className="team-member-description col-12 col-md-6">
+              <h3>Front desk </h3>
+              <p>
+              Eva is the first friendly face you see when you come to Sinai dental. Ever noticed how our waiting area feels welcoming? That’s our administrators touch. When hiccups happen (and they always do), Eva swoops in so feel at ease when you come to Sinai.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+
     </>
   );
 };
