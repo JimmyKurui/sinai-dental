@@ -1,17 +1,23 @@
-$theme-color-1: teal;
-$theme-color-2: #fafafa;
+$theme-color-1: rgba(0, 159, 205);
+$theme-color-2: rgba(118, 224, 238);
+$theme-color-3: rgb(245, 255, 250);
+$theme-color-4: rgba(213, 248, 254);
 
-$primary-color: #3f37c9;
-$secondary-color: #333;
+$primary-color: rgba(21, 138, 155);
+$secondary-color: rgb(233, 233, 233);
+$accent-color: teal;
 
+$subheading-color: #333;
 $heading-color: #555;
-$accent-color: orange;
 
 :root {
     --primary-color: #{$primary-color};
     --secondary-color: #{$secondary-color};
+    --accent-color: #{$accent-color};
     --theme-color-1: #{$theme-color-1};
     --theme-color-2: #{$theme-color-2};
+    --theme-color-3: #{$theme-color-3};
+    --theme-color-4: #{$theme-color-4};
     --heading-color: #{$heading-color};
     --gradient-color-1: linear-gradient(45deg, #{$primary-color}, #{$theme-color-2} );
     color-scheme: light dark;
@@ -25,4 +31,24 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
+}
+
+.bg-app-accent {
+    background-color: var(--accent-color);
+    color: var(--theme-color-2);
+}
+
+.bg-app-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.bg-app-primary-light {
+    background-color: var(--theme-color-1);
+    color: var(--secondary-color);
+}
+.text-app-primary {
+    color: var(--primary-color);
+}
+.text-app-accent {
+    color: var(--theme-color-1);
 }

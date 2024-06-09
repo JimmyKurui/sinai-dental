@@ -1,50 +1,37 @@
 import Banner from "../components/ui/Banner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserDoctor, faUserAstronaut, faUserNurse } from "@fortawesome/free-solid-svg-icons";
 // import { useState, useEffect } from "react";
 // import { useIntersectionObserver } from "react-intersection-observer";
 
 const Team = () => {
-  // const [isVisible, setIsVisible] = useState(false);
-  // const observer = useIntersectionObserver(
-  //   document.querySelector("#team-section"),
-  //   {
-  //     threshold: 0.5,
-  //     rootMargin: "0px 0px -50% 0px",
-  //   },
-  //   (entries) => {
-  //     if (entries[0].isIntersecting) {
-  //       setIsVisible(true);
-  //     }
-  //   }
-  // );
-
-  // useEffect(() => {
-  //   observer()
-
-  //   return () => {
-  //     observer.disconnect();
-  //   };
-  // }, []);
 
   return (
     <>
-      <Banner message="Team" />
-
+      <Banner />
       <section id="team-section">
-          <h2 className="text-center">Meet The Team</h2>
-          <p className="p-4 text-center">We have a happy and motivated team at Sinai Dental Practice, sharing a common goal of achieving the highest standard of care for each of our patients. Our team includes Dentists, nurses, adminitrative assistants, IT technician and a consultant aneasthesiologist who does our sedation cases.  We believe the best way to serve our clients is through the ability to listen and care for our patients overall well being. We are always available to assist you with queries on any aspect of your dental experience.</p>
         <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-8">
+              <h2>Meet The Team</h2>
+              <p>We have a happy and motivated team at Sinai Dental Practice, sharing a common goal of achieving the highest standard of care for each of our patients. 
+                <span> Our team includes Dentists, nurses, adminitrative assistants, IT technician and a consultant aneasthesiologist who does our sedation cases.</span>
+              </p>
+              <p>We believe the best way to serve our clients is through the ability to listen and care for our patients overall well being. We are always available to assist you with queries on any aspect of your dental experience.</p>
+            </div>
+          </div>
           <div className="row team-member">
-            <div className="team-member-figure col-12 col-md-6">
+            <div className="team-member-figure col-12 col-md-4">
               <img
                 src="https://via.placeholder.com/300x300"
                 alt="Team Member"
-                // className={`team-member team-member-image ${
-                //   isVisible ? "fade-in-bottom" : ""
-                // }`}
               />
             </div>
-            <div className="team-member-description col-12 col-md-6">
-              <h3>Dr. Rubona Matthew</h3>
+            <div className="team-member-description col-12 col-md-8">
+              <h3>
+                <FontAwesomeIcon icon={faUserDoctor} />
+                Dr. Rubona Matthew
+              </h3>
               <h4>Team leader</h4> 
               <p>A graduate of College of Health Sciences Makerere University,  Matthew qualified with a distinction in practice of dentistry. During his studies he had an opportunity to intern at Kings College London and Queen Mary&apos;s in Belfast Ireland.</p>
               <p>After his qualification, he went on to join the busy department of oral and maxillo-facial surgery Mulago Hospital where he worked for a number of years. Through interaction with colleagues both within the oral surgery department and several visiting surgeons from allover the world he was able to acquire and become proficient in different surgical skills. After gaining experience he then went on to set up Sinai dental in 2010.</p>
@@ -64,7 +51,10 @@ const Team = () => {
               />
             </div>
             <div className="team-member-description col-12 col-md-6">
-              <h3>Dr. Cheptoris Ashar </h3>
+              <h3>
+                <FontAwesomeIcon icon={faUserDoctor} />
+                Dr. Cheptoris Ashar 
+              </h3>
               <p>Cheptoris graduated from College of Health Sciences Makerere University in 2010.  After graduating, she went on to join International Hospital Kampala (IHK) under Dr. Ian Clark as the hospital&apos;s lead dentist. After gaining experience working with IHK she joined Sinai Dental in 2017. Cheptoris has a Post Graduate Diploma in orthodontics and dentistry with Dr. Jaques cilliers. </p>
               <p>Cheptoris has a keen interest in orthodontics and general dentistry and is instrumental in branding and building a reputation of clinical excellence at Sinai Dental.</p>
               <p>Cheptoris is a recreational runner, enjoys hiking and gardening when she is not working.</p>
@@ -76,13 +66,13 @@ const Team = () => {
               <img
                 src="https://via.placeholder.com/300x300"
                 alt="Team Member"
-                // className={`team-member team-member-image ${
-                //   isVisible ? "fade-in-bottom" : ""
-                // }`}
               />
             </div>
             <div className="team-member-description col-12 col-md-6">
-              <h3>Nursing team</h3>
+              <h3>
+                <FontAwesomeIcon icon={faUserNurse} />
+                Nursing team
+              </h3>
               <p>
               Our nurses ensure your comfort and well-being throughout your dental treatment . From the moment you step into our clinic, they greet you with warmth and kindness. Behind-the-Scenes our nurses are busy preparing the treatment room. They sterilize instruments, organize supplies, and create a soothing environment.
               </p>
@@ -104,7 +94,10 @@ const Team = () => {
               />
             </div>
             <div className="team-member-description col-12 col-md-6">
-              <h3>Front desk </h3>
+              <h3>
+              <FontAwesomeIcon icon={faUserAstronaut} />
+                Front desk
+               </h3>
               <p>
               Eva is the first friendly face you see when you come to Sinai dental. Ever noticed how our waiting area feels welcoming? That’s our administrators touch. When hiccups happen (and they always do), Eva swoops in so feel at ease when you come to Sinai.
               </p>

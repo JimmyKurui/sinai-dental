@@ -4,7 +4,7 @@ import Logo from '@img/sinai-dental-logo.jpg'
 const Navbar = () => {
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <div className="navbar-brand" >
                         <Link to="/">

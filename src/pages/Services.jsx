@@ -256,19 +256,19 @@ const Services = () => {
         {
           key: "cosmetic-veneers",
           title: "veneers",
-          body: "This is what we provide for this service 2",
+          body: "Veneers are thin shells of porcelain or composite resin that cover the front surface of teeth to improve their appearance, often used to fix chipped, stained, or misaligned teeth."
         },
         {
           key: "cosmetic-fillings",
-          title: "Tooth coloured fillings ( dental bonding)",
-          body: "This is what we provide for this service 2",
+          title: "Tooth coloured fillings (dental bonding)",
+          body: "Tooth coloured fillings, also known as dental bonding, use composite resin to repair decayed, chipped, or discolored teeth, blending seamlessly with the natural tooth color."
         },
         {
           key: "cosmetic-whitening",
           title: "Teeth whitening",
-          body: "This is what we provide for this service 2",
-        },
-      ],
+          body: "Teeth whitening is a cosmetic procedure that uses bleaching agents to lighten teeth and remove stains, resulting in a brighter, more attractive smile."
+        }
+      ]
     },
     {
       key: "orthodontic",
@@ -277,14 +277,14 @@ const Services = () => {
         {
           key: "ortho-braces",
           title: "traditional braces",
-          body: "This is what we provide for this service 2",
+          body: "Traditional braces use metal brackets and wires to gradually move teeth into proper alignment, effectively correcting a wide range of dental alignment issues."
         },
         {
           key: "ortho-aligners",
           title: "clear aligners",
-          body: "This is what we provide for this service 2",
-        },
-      ],
+          body: "Clear aligners, such as Invisalign, are custom-made, transparent trays that fit over the teeth and gently shift them into place without the need for metal braces."
+        }
+      ]
     },
     {
       key: "surgery",
@@ -293,19 +293,19 @@ const Services = () => {
         {
           key: "surgery-implants",
           title: "Dental implants",
-          body: "This is what we provide for this service 2",
+          body: "Dental implants are artificial tooth roots made of titanium that are surgically placed into the jawbone to support replacement teeth or bridges, providing a permanent solution for missing teeth."
         },
         {
           key: "surgery-molar-extract",
           title: "Third molar extractions",
-          body: "This is what we provide for this service 2",
+          body: "Third molar extractions involve the surgical removal of wisdom teeth, which are the last set of molars that can cause overcrowding or other dental issues if not properly aligned."
         },
         {
           key: "surgery-difficult-extract",
           title: "Difficult extractions",
-          body: "This is what we provide for this service 2",
-        },
-      ],
+          body: "Difficult extractions refer to the removal of teeth that are impacted, broken, or otherwise challenging to extract, requiring specialized surgical techniques."
+        }
+      ]
     },
     {
       key: "restorative",
@@ -314,19 +314,19 @@ const Services = () => {
         {
           key: "restorative-crowns",
           title: "dental crowns",
-          body: "This is what we provide for this service 2",
+          body: "Dental crowns are custom-made caps that cover and restore the shape, size, and strength of damaged teeth, protecting them from further damage while improving appearance."
         },
         {
           key: "restorative-bridges",
           title: "dental bridges",
-          body: "This is what we provide for this service 2",
+          body: "Dental bridges consist of one or more artificial teeth anchored by crowns on adjacent natural teeth, effectively filling the gap left by missing teeth."
         },
         {
           key: "restorative-dentures",
           title: "Dentures",
-          body: "This is what we provide for this service 2",
-        },
-      ],
+          body: "Dentures are removable appliances that replace missing teeth and surrounding tissues, available as full or partial sets to restore function and aesthetics."
+        }
+      ]
     },
     {
       key: "emergency",
@@ -335,14 +335,14 @@ const Services = () => {
         {
           key: "emergency-same-day",
           title: "Same day emergencies",
-          body: "This is what we provide for this service 2",
+          body: "Same day emergency services provide immediate dental care for urgent issues such as severe pain, broken teeth, or infections, ensuring prompt relief and treatment."
         },
         {
           key: "emergency-tooth-jaw-pain",
           title: "tooth pain/jaw pain",
-          body: "This is what we provide for this service 2",
-        },
-      ],
+          body: "Emergency treatment for tooth and jaw pain addresses acute discomfort caused by conditions like tooth decay, abscesses, or TMJ disorders, offering timely relief."
+        }
+      ]
     },
     {
       key: "others",
@@ -351,10 +351,11 @@ const Services = () => {
         {
           key: "others-sedation",
           title: "Sedation",
-          body: "This is what we provide for this service 2",
-        },
-      ],
-    },
+          body: "Sedation dentistry uses medication to help patients relax during dental procedures, making it suitable for those with dental anxiety or undergoing lengthy treatments."
+        }
+      ]
+    }
+    
   ];
 
   // Sort the content array of each element alphabetically by title
@@ -384,7 +385,7 @@ const Services = () => {
   }
   return (
     <>
-      <Banner image={bannerImg} message="Services" />
+      <Banner image={bannerImg} />
       <div className="container">
         <section className="services-summary">
           <div className="row justify-content-center">
@@ -412,7 +413,9 @@ const Services = () => {
                     className="text-uppercase heading-3 category-title"
                     onClick={toggleCategory(categoryEl.key)}
                   >
-                  <FontAwesomeIcon icon={faLocationArrow} className="me-2"></FontAwesomeIcon>
+                  <FontAwesomeIcon icon={faLocationArrow}
+                    className={`rotate-icon ${selectedCategoryKey === categoryEl.key ? "rotated" : ""}`}
+                  ></FontAwesomeIcon>
                     {categoryEl.category}
                   </h3>
 
@@ -423,7 +426,6 @@ const Services = () => {
                         <h4 className="text-capitalize heading-4 category-heading">
                           <FontAwesomeIcon 
                             icon={(showHeadingContent == j) ? faCaretDown : faCaretRight} 
-                            className="me-2"
                             onClick={showContent(j)} 
                           ></FontAwesomeIcon>
                           {service.title}

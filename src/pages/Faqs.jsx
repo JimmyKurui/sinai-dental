@@ -9,7 +9,7 @@ const Faqs = () => {
         answer: "Yes, we can process details for your appointments at our front desk and arrange for a doctor's consultation",
     },
     {
-        question: "Do you accept insurance",
+        question: "Do you accept insurance ?",
         answer: "No, unfortunately we do not accept this option at the moment",
     },
     {
@@ -20,12 +20,12 @@ const Faqs = () => {
 
   return (
     <div className="container">
-      <div className="row">
-        <h2 className="text-center">FAQS Section</h2>
+      <div className="row mt-5 pt-5">
+        <h2 className="text-center mt-5">FAQS Section</h2>
         {questionsAndAnswers.map((el, i) => (
           <div key={i} className="col-12 col-md-6 col-lg-4">
-            <div >
-              <h6>{el.question}</h6>
+            <div className="p-3">
+              <h5>{el.question}</h5>
               <p>{el.answer}</p>
             </div>
           </div>

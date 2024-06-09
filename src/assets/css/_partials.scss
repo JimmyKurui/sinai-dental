@@ -1,5 +1,6 @@
 @use "config" as *;
 
+
 section:not(.banner) {
   margin: 2rem auto;
 }
@@ -16,14 +17,13 @@ button {
 
 a {
     text-decoration: none;
-    color: #{$secondary-color};
 }
 a:hover {
-    color: #{$primary-color} !important;
+    color: #{$theme-color-1} !important;
 }
 
 footer {
-  background-color: #{$theme-color-1};
+  background-color: #{$accent-color};
 
 * {
   color: #fff;
@@ -31,7 +31,19 @@ footer {
 }
 
 h2 {
-  padding: 2rem 0;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--heading-color);
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding: .5px;
+    margin: 1rem;
+    border: 1px solid var(--heading-color);
+    opacity: .3;
+
+  }
 }
 
 ul {
@@ -39,9 +51,12 @@ ul {
     li {
       padding: 10px;
       &:hover {
-        color: #{$primary-color};
+        color: #{$theme-color-1};
         scale: 1.2;
       }
     }
   }
 
+svg {
+  padding: 0px 10px;
+}
