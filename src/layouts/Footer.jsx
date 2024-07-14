@@ -8,20 +8,18 @@ const Footer = () => {
   // Contact
   return (
     <footer>
-      <div className="container-fluid">
+      <div className="container-fluid container-md-fluid g-3">
         <div className="row py-3 px-sm-5">
-          <div className="col-12 col-sm-6">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7489250284934!2d32.58536265369877!3d0.33793002020242524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbba666177429%3A0x5a1ad88f3a5c5f9a!2sSinai%20Dental%20Practice!5e0!3m2!1sen!2sus!4v1705143839441!5m2!1sen!2sus"
-              width="100%"
-              height="200"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div className="col-12 col-sm-2"></div>
+          <div className="col-12 col-sm-4 contact-hours">
+            <h5 className="mb-3">Contact Hours</h5>
+            <div><span><strong>Monday</strong></span><span>- 8:30 A.M - 5.00 P.M</span></div>
+            <div><span><strong>Tuesday</strong></span><span>- 8:30 A.M - 5.00 P.M</span></div>
+            <div><span><strong>Wednesday</strong></span><span>- 8:30 A.M - 5.00 P.M</span></div>
+            <div><span><strong>Friday</strong></span><span>- 8:30 A.M - 5.00 P.M</span></div>
+            <div><span><strong>Saturday</strong></span><span>- 8:30 A.M - 5.00 P.M</span></div>
           </div>
-          <div className="col-12 col-sm-6 ps-5 pl-sm-0">
+          <div className="col-12 col-sm-6">
             <div className="business-info">
               <h3>Sinai Dental</h3>
               <address>
@@ -29,13 +27,13 @@ const Footer = () => {
                 <span>Kampala, Uganda</span>
               </address>
               <div className="d-flex">
-                <a href="tel:+256(0)776045352" className='me-4'>
-                  <FontAwesomeIcon icon={faPhone} /> +256 776 045352
-                </a>
-                <a href="mailto:sinaident@gmail.com">
-                  <FontAwesomeIcon icon={faEnvelope} /> sinaident@gmail.com
-                </a>
+                  <FontAwesomeIcon icon={faPhone} /> 
+                  <a href="tel:+256(0)776045352">+256 776 045 352</a>/
+                  <a href="tel:+256(0)758601110">+256 758 601 110</a>
               </div>
+                  <a href="mailto:sinaident@gmail.com">
+                    <FontAwesomeIcon icon={faEnvelope} /> sinaident@gmail.com
+                  </a>
             </div>
             <div className="col-12">
               <div className="socials mt-4 ">

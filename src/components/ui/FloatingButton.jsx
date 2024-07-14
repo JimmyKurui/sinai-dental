@@ -8,7 +8,8 @@ const FloatingButton = () => {
     return (
             <div className="p-2">
                 <a id="#whatsapp-link" href={url} target="_blank" rel="noreferrer"
-                className="floating-btn bg-app-primary-light">
+                className="floating-btn bg-app-primary-light"
+                data-toggle="tooltip" data-placement="top" title="Booking">
                     <FontAwesomeIcon icon={faMessage} size="lg"></FontAwesomeIcon>
                 </a>
             </div>

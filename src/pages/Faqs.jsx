@@ -19,9 +19,9 @@ const Faqs = () => {
   ];
 
   return (
-    <div className="container">
-      <div className="row mt-5 pt-5">
-        <h2 className="text-center mt-5">FAQS Section</h2>
+    <div className="container-fluid container-md pt-5">
+      <div className="row pt-5">
+        <h2 className="text-center mt-5">FAQS</h2>
         {questionsAndAnswers.map((el, i) => (
           <div key={i} className="col-12 col-md-6 col-lg-4">
             <div className="p-3">

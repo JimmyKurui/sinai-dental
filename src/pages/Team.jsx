@@ -1,6 +1,11 @@
 import Banner from "../components/ui/Banner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserDoctor, faUserAstronaut, faUserNurse } from "@fortawesome/free-solid-svg-icons";
+import drMatthewImage from "@img/team/dr-matthew-on-mountain.jpeg"
+import drCheptoImage from "@img/team/dr-chepto.jpeg"
+import nursesImage from "@img/team/nurses.jpeg"
+import frontDeskImage from "@img/team/eva-front-desk.jpeg"
+import dentistsImage from "@img/team/dentists-illustration.png"
 // import { useState, useEffect } from "react";
 // import { useIntersectionObserver } from "react-intersection-observer";
 
@@ -8,9 +13,9 @@ const Team = () => {
 
   return (
     <>
-      <Banner />
+      <Banner image={dentistsImage} />
       <section id="team-section">
-        <div className="container">
+        <div className="container-fluid container-md">
           <div className="row justify-content-center">
             <div className="col-12 col-md-8">
               <h2>Meet The Team</h2>
@@ -23,7 +28,7 @@ const Team = () => {
           <div className="row team-member">
             <div className="team-member-figure col-12 col-md-4">
               <img
-                src="https://via.placeholder.com/300x300"
+                src={drMatthewImage}
                 alt="Team Member"
               />
             </div>
@@ -32,7 +37,7 @@ const Team = () => {
                 <FontAwesomeIcon icon={faUserDoctor} />
                 Dr. Rubona Matthew
               </h3>
-              <h4>Team leader</h4> 
+              <h4>Team Leader</h4> 
               <p>A graduate of College of Health Sciences Makerere University,  Matthew qualified with a distinction in practice of dentistry. During his studies he had an opportunity to intern at Kings College London and Queen Mary&apos;s in Belfast Ireland.</p>
               <p>After his qualification, he went on to join the busy department of oral and maxillo-facial surgery Mulago Hospital where he worked for a number of years. Through interaction with colleagues both within the oral surgery department and several visiting surgeons from allover the world he was able to acquire and become proficient in different surgical skills. After gaining experience he then went on to set up Sinai dental in 2010.</p>
               <p>Matthew takes on the role of clinical lead at the practice and has a special interest in  implants and  aesthetic dentistry including crowns , bridges , tooth whitening and composite fillings.</p>
@@ -43,11 +48,8 @@ const Team = () => {
           <div className="row team-member">
             <div className="team-member-figure col-12 col-md-6">
               <img
-                src="https://via.placeholder.com/300x300"
+                src={drCheptoImage}
                 alt="Team Member"
-                // className={`team-member team-member-image ${
-                //   isVisible ? "fade-in-bottom" : ""
-                // }`}
               />
             </div>
             <div className="team-member-description col-12 col-md-6">
@@ -64,7 +66,7 @@ const Team = () => {
           <div className="row team-member">
             <div className="team-member-figure col-12 col-md-6">
               <img
-                src="https://via.placeholder.com/300x300"
+                src={nursesImage}
                 alt="Team Member"
               />
             </div>
@@ -86,11 +88,8 @@ const Team = () => {
           <div className="row team-member">
             <div className="team-member-figure col-12 col-md-6">
               <img
-                src="https://via.placeholder.com/300x300"
+                src={frontDeskImage}
                 alt="Team Member"
-                // className={`team-member team-member-image ${
-                //   isVisible ? "fade-in-bottom" : ""
-                // }`}
               />
             </div>
             <div className="team-member-description col-12 col-md-6">
@@ -98,9 +97,9 @@ const Team = () => {
               <FontAwesomeIcon icon={faUserAstronaut} />
                 Front desk
                </h3>
-              <p>
-              Eva is the first friendly face you see when you come to Sinai dental. Ever noticed how our waiting area feels welcoming? That’s our administrators touch. When hiccups happen (and they always do), Eva swoops in so feel at ease when you come to Sinai.
-              </p>
+              <p>Eva is the first friendly face you see when you come to Sinai dental</p>
+              <p>Ever noticed how our waiting area feels welcoming? That’s our administrators touch </p>
+              <p> When hiccups happen (and they always do), Eva swoops in so feel at ease when you come to Sinai</p>
             </div>
           </div>
         </div>

@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <>
-      <Banner image={bannerImg} />
+      <Banner image={bannerImg} message={'Sinai Dental'}/>
 
       <div className="hero">
         <blockquote className="bg-app-primary-light p-3">
@@ -76,7 +76,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container-fluid container-md">
         <section className="services-summary">
           <div className="row">
             <h2>Services</h2>
@@ -104,7 +104,7 @@ const Home = () => {
           <CardTiles infoArray={[]} />
         </section> */}
 
-        <section className="kpis my-4">
+        <section className="kpis my-4 flex-wrap">
           <div className="d-flex justify-content-center border-bottom border-top py-4">
             <div className="inner bg-info">
               <FontAwesomeIcon icon={faHeart} size="lg" className="py-2" />

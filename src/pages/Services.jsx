@@ -386,7 +386,7 @@ const Services = () => {
   return (
     <>
       <Banner image={bannerImg} />
-      <div className="container">
+      <div className="container-fluid container-md">
         <section className="services-summary">
           <div className="row justify-content-center">
             <div className="col-12 col-md-8">
