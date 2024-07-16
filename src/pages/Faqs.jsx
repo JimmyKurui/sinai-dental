@@ -14,7 +14,7 @@ const Faqs = () => {
     },
     {
         question: "What payment options do you accept ?",
-        answer: "We take payment at the front-desk and our options include: Bank cards for VISA/ Mastercard. Mobile money with MTN/ Airtel Money",
+        answer: "We accept cash, bank cards (VISA/ Mastercard) and mobile money (MTN/ Airtel). Front-desk payment is accepted for all options allowed",
     }
   ];
 

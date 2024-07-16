@@ -12,7 +12,7 @@ import Banner from "../components/ui/Banner";
 import ImageBox from "../components/ui/ImageBox";
 import CardTiles from "../layouts/CardTiles";
 
-import bannerImg from "@img/office/surgery-room.jpg";
+import surgeryRoom from "@img/office/surgery-room.jpg";
 import receptionImage from "@img/office/reception.jpg";
 
 const Home = () => {
@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <>
-      <Banner image={bannerImg} message={'Sinai Dental'}/>
+      <Banner image={receptionImage} message={'Sinai Dental'}/>
 
       <div className="hero">
         <blockquote className="bg-app-primary-light p-3">
@@ -95,7 +95,7 @@ const Home = () => {
               </ul>
             </div>
             <div className="col-12 col-md-6">
-              <ImageBox image={receptionImage}></ImageBox>
+              <ImageBox image={surgeryRoom}></ImageBox>
             </div>
           </div>
         </section>

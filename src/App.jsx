@@ -10,6 +10,7 @@ import Services from '@/pages/Services';
 import Team from '@/pages/Team';
 import Faqs from '@/pages/Faqs';
 import Contact from '@/pages/Contact';
+import Analytics from '@/pages/Analytics';
 import NotFound from '@/pages/404';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
     {path: '/services', element: <Services /> },
     {path: '/faqs', element: <Faqs /> },
     {path: '/contact', element: <Contact /> },
+    {path: '/analytics', element: <Analytics /> },
     { path: "*", element: <NotFound /> }
   ];
   
