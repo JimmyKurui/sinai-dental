@@ -7,6 +7,7 @@ import Banner from "../components/ui/Banner";
 import bannerImg from "@img/office/room-1-closeup.jpg";
 
 const Services = () => {
+  document.title = 'Services | Sinai Dental'
   const [selectedCategoryKey, setSelectedCategoryKey] = useState(null);
   const [showHeadingContent, setShowHeadingContent] = useState(false);
 
@@ -385,12 +386,11 @@ const Services = () => {
   }
   return (
     <>
-      <Banner image={bannerImg} />
+      <Banner image={bannerImg} message={'Services'} />
       <div className="container-fluid container-md">
         <section className="services-summary">
           <div className="row justify-content-center">
             <div className="col-12 col-md-8">
-              <h2 className="text-center">Services</h2>
               <p>
                 We offer a full range of treatment and services within the
                 practice, ranging from preventative services, to cosmetic
@@ -398,17 +398,21 @@ const Services = () => {
                 technology, and our chair side monitors and intra-oral cameras
                 let you see what the dentist can see. Our digital x-rays allow
                 us to reduce radiation, keeping patient safety and well being a
-                priority. <u>View our Before & After Gallery</u>
+                priority.
+                <u className="position-relative"> 
+                  View our Before & After Gallery
+                  <small style={{fontWeight: 300}} className="position-absolute top-0 right-0 badge rounded-pill bg-secondary">Coming Soon</small>
+                </u>
               </p>
             </div>
           </div>
         </section>
 
         <section className="services">
-          <div className="row">
-            <div className="col cols-12">
+          <div className="row justify-content-center">
+            <div className="cols-12 col-md-10">
               {sortedServices.map((categoryEl, i) => (
-                <div className="service-category" key={i}>
+                <div className={`service-category ${selectedCategoryKey? '': 'ms-5'}`} key={i}>
                   <h3
                     className="text-uppercase heading-3 category-title"
                     onClick={toggleCategory(categoryEl.key)}

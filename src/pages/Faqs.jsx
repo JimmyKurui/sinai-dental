@@ -1,4 +1,5 @@
 const Faqs = () => {
+  document.title = 'FAQs | Sinai Dental'
   const questionsAndAnswers = [
     {
       question: "Booking an appointment with the dental clinic",

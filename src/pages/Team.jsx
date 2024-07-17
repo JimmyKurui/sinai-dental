@@ -4,29 +4,28 @@ import { faUserDoctor, faUserAstronaut, faUserNurse } from "@fortawesome/free-so
 import drMatthewImage from "@img/team/dr-matthew-on-mountain.jpeg"
 import drCheptoImage from "@img/team/dr-chepto.jpeg"
 import nursesImage from "@img/team/nurses.jpeg"
-import frontDeskImage from "@img/team/eva-front-desk.jpeg"
-import dentistsImage from "@img/team/dentists-illustration.png"
+import frontDeskImage from "@img/team/eva-front-desk-main.jpg"
 // import { useState, useEffect } from "react";
 // import { useIntersectionObserver } from "react-intersection-observer";
 
 const Team = () => {
-
+  document.title = 'Team | Sinai Dental'
+  const stockImage = 'https://www.honolulufamilydentist.com/wp-content/uploads/2018/11/GettyImages-858252120-1170x550.jpg';
   return (
     <>
-      <Banner image={dentistsImage} />
+      <Banner image={stockImage} message={'Meet The Team'} />
       <section id="team-section">
         <div className="container-fluid container-md">
           <div className="row justify-content-center">
             <div className="col-12 col-md-8">
-              <h2>Meet The Team</h2>
               <p>We have a happy and motivated team at Sinai Dental Practice, sharing a common goal of achieving the highest standard of care for each of our patients. 
-                <span> Our team includes Dentists, nurses, adminitrative assistants, IT technician and a consultant aneasthesiologist who does our sedation cases.</span>
+                <span> Our team includes dentists, nurses, administrative assistants, IT technician and a consultant aneasthesiologist who does our sedation cases.</span>
               </p>
               <p>We believe the best way to serve our clients is through the ability to listen and care for our patients overall well being. We are always available to assist you with queries on any aspect of your dental experience.</p>
             </div>
           </div>
           <div className="row team-member">
-            <div className="team-member-figure col-12 col-md-4">
+            <div className="team-member-figure col-12 col-md-4 mb-3 mb-md-0">
               <img
                 src={drMatthewImage}
                 alt="Team Member"
@@ -46,7 +45,7 @@ const Team = () => {
           </div>
 
           <div className="row team-member">
-            <div className="team-member-figure col-12 col-md-6">
+            <div className="team-member-figure col-12 col-md-6 mb-3 mb-md-0">
               <img
                 src={drCheptoImage}
                 alt="Team Member"
@@ -58,13 +57,13 @@ const Team = () => {
                 Dr. Cheptoris Ashar 
               </h3>
               <p>Cheptoris graduated from College of Health Sciences Makerere University in 2010.  After graduating, she went on to join International Hospital Kampala (IHK) under Dr. Ian Clark as the hospital&apos;s lead dentist. After gaining experience working with IHK she joined Sinai Dental in 2017. Cheptoris has a Post Graduate Diploma in orthodontics and dentistry with Dr. Jaques cilliers. </p>
-              <p>Cheptoris has a keen interest in orthodontics and general dentistry and is instrumental in branding and building a reputation of clinical excellence at Sinai Dental.</p>
-              <p>Cheptoris is a recreational runner, enjoys hiking and gardening when she is not working.</p>
+              <p>She has a keen interest in orthodontics and general dentistry and is instrumental in branding and building a reputation of clinical excellence at Sinai Dental.</p>
+              <p>In addition she is also a recreational runner, enjoys hiking and gardening when she is not working.</p>
             </div>
           </div>
 
           <div className="row team-member">
-            <div className="team-member-figure col-12 col-md-6">
+            <div className="team-member-figure col-12 col-md-6 mb-3 mb-md-0">
               <img
                 src={nursesImage}
                 alt="Team Member"
@@ -86,7 +85,7 @@ const Team = () => {
           </div>
 
           <div className="row team-member">
-            <div className="team-member-figure col-12 col-md-6">
+            <div className="team-member-figure col-12 col-md-6 mb-3 mb-md-0">
               <img
                 src={frontDeskImage}
                 alt="Team Member"

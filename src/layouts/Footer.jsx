@@ -8,8 +8,8 @@ const Footer = () => {
   // Contact
   return (
     <footer>
-      <div className="container-fluid container-md-fluid g-3">
-        <div className="row py-3 px-sm-5">
+      <div className="container-fluid container-md-fluid">
+        <div className="row py-3 px-sm-5 g-3 g-md-0">
           <div className="col-12 col-sm-2"></div>
           <div className="col-12 col-sm-4 contact-hours">
             <h5 className="mb-3">Contact Hours</h5>
