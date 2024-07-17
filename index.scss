@@ -201,21 +201,11 @@
 
 .service-category {
     .category-title {
-        // margin-left: 5em;
         color: var(--primary-color);
-    }
-    .service {
-        .category-heading {
-            // margin-left: 4em;
-        }
-        .heading-content {
-            // margin-left: 6em;
-        }
     }
     .rotate-icon {
         transition: transform 0.3s;
     }
-    
     .rotate-icon.rotated {
         transform: rotate(45deg);
     }

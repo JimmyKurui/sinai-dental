@@ -49,6 +49,7 @@ const Analytics = () => {
               maxLength={1}
               value={digit}
               onChange={(e) => handleInputChange(e, index)}
+              onKeyDown={(e) => {e.key == 'Enter' ? validateOtp() : null}}
               className="otp-input"
             />
           ))}

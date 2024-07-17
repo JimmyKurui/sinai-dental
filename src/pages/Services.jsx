@@ -427,10 +427,9 @@ const Services = () => {
                     categoryEl.content.map((service, j) => (
                       <div className="service" key={j}>
                         
-                        <h4 className="text-capitalize heading-4 category-heading">
+                        <h4 className="text-capitalize heading-4 category-heading" onClick={showContent(j)} >
                           <FontAwesomeIcon 
                             icon={(showHeadingContent == j) ? faCaretDown : faCaretRight} 
-                            onClick={showContent(j)} 
                           ></FontAwesomeIcon>
                           {service.title}
                         </h4>
