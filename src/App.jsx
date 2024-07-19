@@ -23,7 +23,6 @@ const App = () => {
     {path: '/analytics', element: <Analytics /> },
     { path: "*", element: <NotFound /> }
   ];
-  
   const location = useLocation();
   const isNotFoundPage = routes.map(el => el.path).includes(location.pathname);
 

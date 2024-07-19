@@ -1,4 +1,4 @@
-// Icons
+import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHeart,
@@ -16,7 +16,9 @@ import surgeryRoom from "@img/office/surgery-room.jpg";
 import receptionImage from "@img/office/reception.jpg";
 
 const Home = () => {
-  document.title = 'Home | Sinai Dental'
+  useEffect(() => {
+    document.title = 'Home | Sinai Dental';
+  }, []);
   const infoArray = [
     {
       img: "path_to_your_image1.jpg",
@@ -49,18 +51,18 @@ const Home = () => {
               care&#8221;
             </blockquote>
             <div className="px-2 my-1 mt-3 mt-md-0">
-              <h5 className="text-app-primary">
+              <h4 className="text-app-primary">
                 <FontAwesomeIcon icon={faTag} className="px-2"></FontAwesomeIcon>
                 Our <span>mission</span>
-              </h5>
+              </h4>
               <p>
               To develop long term relationships with our patients
                 and ensure distinguished service through personalised, honest and informed care.
               </p> 
-              <h5 className="text-app-primary my-1">
+              <h4 className="text-app-primary my-1">
                 <FontAwesomeIcon icon={faPersonWalkingWithCane} className="px-2"></FontAwesomeIcon>
                 What do we mean by personalised care?
-              </h5>
+              </h4>
               <p>
                 Have you visited a dentist and felt that you were being rushed
                 through your problem and therefore your treatment? At Sinai dental
@@ -104,17 +106,18 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* <section className="reviews">
-          <h2 className="text-center">Reviews</h2>
-          <CardTiles infoArray={[]} />
-        </section> */}
+        <section className="reviews">
+          <h2 className="d-none">Reviews</h2>
+          {/* <CardTiles infoArray={[]} /> */}
+        </section>
 
         <section className="kpis my-4">
           <div className="d-flex justify-content-md-center border-bottom border-top py-4">
+            <h2 className="d-none">KPIs</h2>
             <div className="inner bg-info my-3">
               <FontAwesomeIcon icon={faHeart} size="lg" className="py-2" />
               <h3 className="py-3">Clients</h3>
-              <p>200</p>
+              <p>Over 4000</p>
             </div>
             <div className="inner bg-warning">
               <FontAwesomeIcon icon={faTrophy} size="lg" className="py-2 " />

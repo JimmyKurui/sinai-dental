@@ -33,9 +33,16 @@
     width: 70vw;
     border-radius: 50px;
     padding: 0;
-    background-color: rgba(245, 255, 250, .7);
+    background-color: rgba(245, 255, 250, .6);
+    opacity: 1;
+    transition: background-color 0.3s, opacity 0.3s;
+    &.scrolled {
+        transform: translate(-50%, 0%);
+        opacity: .3;
+    }
     &:hover {
         background-color: rgb(245, 255, 250);
+        opacity: 1;
     }
     .navbar-brand {
         width: 40%;

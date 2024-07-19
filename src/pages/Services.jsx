@@ -1,13 +1,16 @@
 // import { Tab, Tabs, Row, Col, Nav } from "react-bootstrap";
 // import Tabs from 'react-bootstrap/Tabs';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight, faCaretDown, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import Banner from "../components/ui/Banner";
 import bannerImg from "@img/office/room-1-closeup.jpg";
+import dentalImg from "@img/illustrations/dental-bridges.jpg";
 
 const Services = () => {
-  document.title = 'Services | Sinai Dental'
+  useEffect(() => {
+    document.title = 'Services | Sinai Dental'
+  }, []);
   const [selectedCategoryKey, setSelectedCategoryKey] = useState(null);
   const [showHeadingContent, setShowHeadingContent] = useState(false);
 
@@ -79,14 +82,14 @@ const Services = () => {
                 teeth.
               </p>
 
-              <h5 className="text-capitalize">Dental checkups</h5>
+              <h5 className="text-capitalize">Dental Checkups</h5>
               <p>
                 With a general oral examination and x-rays, our dentists are
                 able to detect any new cavities , pinpoint any leakages on old
                 fillings or notice any new abnormalities in the mouth.
               </p>
 
-              <h5 className="text-capitalize">dental cleaning</h5>
+              <h5 className="text-capitalize">Dental Cleaning</h5>
               <p>
                 Because tartar and stubborn stains are extremely difficult to
                 remove with your regular tooth brush, ultrasonic scalers are
@@ -97,7 +100,7 @@ const Services = () => {
                 anaesthesia.
               </p>
 
-              <h5 className="text-capitalize">digital radiographs</h5>
+              <h5 className="text-capitalize">Digital Radiographs</h5>
               <p>
                 Dental digital radiographs use 80% to 90% less radiation
                 compared to the traditional radiographs and so they are safer
@@ -141,7 +144,7 @@ const Services = () => {
               </p>
               <p>
                 At Sinai dental , we are committed to ensuring that our patients
-                attain optimal oral health in a confortable and professional
+                attain optimal oral health in a comfortable and professional
                 environment
               </p>
 
@@ -183,7 +186,7 @@ const Services = () => {
               <p>
                 Our team at Sinai Dental endeavours to give you all the
                 information including solutions that you require about your
-                condition in a comfortable and relaxed environment.{" "}
+                condition in a comfortable and relaxed environment.
               </p>
             </>
           ),
@@ -233,41 +236,122 @@ const Services = () => {
                   Gum reshaping following traditional braces and in gummy smiles
                 </li>
                 <li>
-                  Painless exposure of the implant without cutting the gum{" "}
+                  Painless exposure of the implant without cutting the gum
                 </li>
                 <li>Tongue-tie release</li>
-                <li>
-                  Frenectomy (Frenum release)
-                  <ol>
-                    <li>Painless Root Canal Treament</li>
-                    <li>Dental anxiety management</li>
-                    <li>chipped tooth</li>
-                  </ol>
-                </li>
+                <li>Frenectomy (Frenum release)</li>
               </ol>
             </>
           ),
         },
-      ],
+        {
+          key: "root-canal",
+          title: "Painless Root Canal Treament",
+          body: (
+            <>
+              <p>
+              So what should I expect during a Root Canal procedure? Is the procedure painful? There are common
+misconceptions that root canals cause pain and/or illness and should be avoided at all costs. The exact
+opposite is true. Infact, root canal treatment has saved countless number of teeth and has led to
+restoration of function and aesthetics. Thanks to advances in dentistry, your root canal treatment can be
+done with no discomfort.
+              </p>
+              <p>
+              Getting a root canal is alot like getting a filling except the appointments may be a little longer. The
+procedure involves numbing the gum around the problematic tooth. Once you are fully numb the third
+layer of the tooth called the pulp is accessed and all the infected tissue is carefully removed. A filling
+called gutta percha is then placed thereafter. We use high quality gutta percha and sealer material . After
+your root canal visit, a set of instructions will be given to you.
+              </p>
+              <p>
+              Root canaled teeth are generally more brittle and are therefore susceptible to fractures. In order to
+              ensure longevity, a tooth that has been root canaled must be crowned.
+              </p>
+              <p>
+              At sinai dental we ensure that your root canal is done in a calm and relaxed environment. Our dentists
+              are availabe should you require emergency dental treatment due to pain.
+              </p>
+            </>
+          )
+        },
+        {
+          key: "dental-anxiety",
+          title: "Dental anxiety management",
+          body: (
+            <>
+              <p>
+              I have a great fear/ anxiety of dentists and yet I badly need dental intervention.
+              </p>
+              <p>
+              Does the above statement apply to you? How can the team at Sinai dental allay your fears and work with
+              you to achieve optimal oral health.
+              </p>
+              <p>
+              At Sinai dental we encourage you to tell us about your fear, we schedule some extra time for the
+appointment, we also employ the TELL, SHOW and DO technique and we offer sedation treatment as
+an option to help alleviate anxiety.
+              </p>
+              <p>We pledge to support our patients in achieving the best oral health.</p>
+            </>
+          )
+        }
+      ]
     },
     {
       key: "cosmetic",
       category: "cosmetic",
-      content: [
+      content: [ 
         {
-          key: "cosmetic-veneers",
-          title: "veneers",
-          body: "Veneers are thin shells of porcelain or composite resin that cover the front surface of teeth to improve their appearance, often used to fix chipped, stained, or misaligned teeth."
+          key: "composite-bonding",
+          title: "Composite bonding (dental bonding)",
+          body: (
+            <>
+              <p>Dental bonding involves applying a tooth-coloured resin material to the affected teeth. This material can
+              change the shape, size, or color of the tooth. Dental bonding is commonly used for cosmetic
+              improvements to your smile. It can conceal chips or cracks in your teeth, camouflage tooth discoloration,
+              close gaps and spaces between teeth, make your teeth appear longer and alter the shape of your teeth
+              </p>
+              <p>Before dental bonding, your dentist will discuss your cosmetic goals with you. Dental X-rays and an
+              examination of your teeth and gums ensure your eligibility for the procedure. During the bonding
+              procedure, your dentist selects a shade of composite resin material that matches your natural teeth color.
+              </p>
+              <p>The same composite resin material used in dental bonding can also be used to fill cavities, replace old
+              silver dental fillings with a more cosmetic alternative and protect exposed teeth roots due to gum
+              recession.
+              </p>
+              <p>
+              Remember that dental bonding is a versatile and common cosmetic dentistry option, allowing you to
+              achieve a more confident smile. Schedule an appointment at Sinai Dental with one of dentists.
+              </p>
+            </>
+          )
         },
         {
-          key: "cosmetic-fillings",
-          title: "Tooth coloured fillings (dental bonding)",
-          body: "Tooth coloured fillings, also known as dental bonding, use composite resin to repair decayed, chipped, or discolored teeth, blending seamlessly with the natural tooth color."
-        },
-        {
-          key: "cosmetic-whitening",
+          key: "teeth-whitening",
           title: "Teeth whitening",
-          body: "Teeth whitening is a cosmetic procedure that uses bleaching agents to lighten teeth and remove stains, resulting in a brighter, more attractive smile."
+          body: (
+            <>
+              <p>
+              Tooth whitening, also known as dental bleaching, is a popular cosmetic dental procedure aimed at
+enhancing the appearance of teeth by making them appear whiter and brighter. Tooth whitening primarily
+involves the use of peroxide-based agents to break down stains and discolorations on the tooth surface.
+Our dentists carefully evaluate patients before recommending tooth whitening.
+              </p>
+              <p>
+              The safety and efficacy of peroxides are well-established, but potential complications should be
+              considered. Some common side effects include tooth sensitivity and mild gum irritation.
+              </p>
+              <h5>Types of Tooth Whitening:</h5>
+              <h5>At-Home Tooth Bleaching:</h5>
+              <p>Patients use custom-made trays filled with a low concentration of peroxide gel.This method allows
+              gradual whitening over several weeks.
+              </p>
+              <h5>In-Office Whitening:</h5>
+              <p>Performed by dental professionals .High-concentration peroxide gels are applied directly to the teeth and
+              results are achieved in a single session.
+              </p>
+            </>
+          )
         }
       ]
     },
@@ -278,12 +362,47 @@ const Services = () => {
         {
           key: "ortho-braces",
           title: "traditional braces",
-          body: "Traditional braces use metal brackets and wires to gradually move teeth into proper alignment, effectively correcting a wide range of dental alignment issues."
+          body: (
+            <>
+              <p>Traditional braces, also known as metal braces, have been a reliable and effective orthodontic treatment
+for decades. Traditional metal braces are durable and can withstand the forces required to move teeth
+into proper alignment.They are also cost-effective compared to some other orthodontic options and are
+versatile in treating Complex Cases:
+</p>
+<p>
+Metal brackets are bonded to the teeth. An archwire connects the brackets, applying gentle pressure to
+guide teeth into their desired positions. Regular adjustments by the dentist ensures progress throughout
+the treatment.
+</p>
+<p>
+Remember that traditional braces remain a trusted choice for achieving a beautifully aligned smile. At
+sinai dental each patient’s treatment plan is tailored to their unique needs so please reach out to us for
+any specific concerns or questions for personalized advice.
+</p>
+            </>
+          )
         },
         {
           key: "ortho-aligners",
           title: "clear aligners",
-          body: "Clear aligners, such as Invisalign, are custom-made, transparent trays that fit over the teeth and gently shift them into place without the need for metal braces."
+          body: (
+            <>
+              <p>
+              Clear aligners refers to a series of clear dental appliances custom-formed to the shape of a patient’s
+teeth. These clear aligners gradually improve both appearance and function by applying gentle,
+consistent pressure to the teeth. Clear aligners are less noticeable than traditional braces and are more
+convenient as patients can remove aligners for eating, brushing, and special occasions.
+              </p>
+              <p>
+              Clear aligners can achieve many tooth movements, but some cases may still be better suited for
+traditional braces or a combination of techniques. Our dentists assess each patient’s unique
+requirements to determine the most suitable treatment plan.
+              </p>
+              <p>
+              Consult with your dentist at Sinai Dental to explore whether Clear aligners is the right choice for you.
+              </p>
+            </>
+          )
         }
       ]
     },
@@ -294,17 +413,58 @@ const Services = () => {
         {
           key: "surgery-implants",
           title: "Dental implants",
-          body: "Dental implants are artificial tooth roots made of titanium that are surgically placed into the jawbone to support replacement teeth or bridges, providing a permanent solution for missing teeth."
+          body: (
+            <>
+              <p>
+              Dental implants serve as artificial tooth roots made of biocompatible materials, typically titanium. They
+basically hold dental crowns, bridges and dentures in place.Dental implants are a wonderful way to keep
+your smile intact. They provide support for your facial muscles and they prevent bone loss by stimulating
+the jaw bone. Normally your jaw bone will deteriorate with missing teeth, however, dental implants can
+prevent that deterioration.
+              </p>
+              <p>
+              During the implant process, the implant is carefully positioned in the jawbone during a minor surgical
+procedure which typically lasts 1 to 2 hours. Over time (approximately 3 to 6 months) the implant fuses
+with the bone, creating a strong bond. An abutment (connector) is attached to the implant.A custom-
+made crown (artificial tooth) is then secured to the abutment. Implant placement is usually painless as its
+done under local anesthesia and the healing time varies but most patients resume normal activities
+quickly.
+              </p>
+              <p>
+              Implants look, feel, and function like natural teeth and with proper care, implants can last a lifetime.
+              Enjoy your favorite foods without restrictions.
+              </p>
+              <p>
+              At Sinai dental our skilled dentist will assess your suitability for implants. Following this assessment all
+processes involved in implant treatment will be discussed with you so you can make an informed choice.
+Remember implants provide you with the best alternative to a healthy mouth when teeth are missing.
+              </p>
+            </>
+          )
         },
         {
           key: "surgery-molar-extract",
           title: "Third molar extractions",
-          body: "Third molar extractions involve the surgical removal of wisdom teeth, which are the last set of molars that can cause overcrowding or other dental issues if not properly aligned."
-        },
-        {
-          key: "surgery-difficult-extract",
-          title: "Difficult extractions",
-          body: "Difficult extractions refer to the removal of teeth that are impacted, broken, or otherwise challenging to extract, requiring specialized surgical techniques."
+          body: (
+            <>
+              <p>
+              Third molar extractions, commonly known as wisdom teeth removal, are a frequent procedure in
+dentistry. Mandibular third molars (also called lower wisdom teeth) are the most frequently extracted
+teeth. These molars typically develop between the ages of 8 to 15 and erupt between 17 to 22 years old.
+Due to their delayed eruption, mandibular third molars are often impacted.
+              </p>
+              <p>
+              Removal of wisdom teeth is a delicate procedure because of their proximity to the nerves which supply
+feeling to the lips, cheeks and tongue. The close proximity of mandibular third molars to the nerve poses
+a risk of nerve damage during extraction. Quantifying this risk by carefully assessing the tooth and taking
+radiographs is therefore important.
+              </p>
+              <p>
+              When it is necessary to remove your tooth for your overall health, our dentists at Sinai keep your comfort
+              in mind.
+              </p>
+            </>
+          )
         }
       ]
     },
@@ -315,17 +475,87 @@ const Services = () => {
         {
           key: "restorative-crowns",
           title: "dental crowns",
-          body: "Dental crowns are custom-made caps that cover and restore the shape, size, and strength of damaged teeth, protecting them from further damage while improving appearance."
+          body: (
+            <>
+              <p>
+              A dental crown is a tooth-shaped cap that replaces your natural tooth above the gum line.It serves
+various purposes, including strengthening weak teeth, improving aesthetics, and restoring
+function.Getting a dental crown typically involves two visits:
+              </p>
+              <p>
+              Your first visit involves numbing the neighbouring teeth and gum area around the tooth receiving the
+crown. Removing any old restorations or decay from the tooth and thereafter reshaping the tooth to
+prepare it for the crown. We then digitally scan your tooth and send it to a lab for your permanent crown
+to be made. We place a temporary crown and ask you to come in for a second visit where we fit the
+permanent crown.
+              </p>
+              <p>
+              There are different types of crowns including ceramic crowns, gold crowns, porcelain fused to metal
+              crowns and stainless steel crowns.
+              </p>
+              <p>Our dentists at Sinai are happy to discuss and recommend a crown type specific to your needs.</p>
+            </>
+          )
         },
         {
           key: "restorative-bridges",
           title: "dental bridges",
-          body: "Dental bridges consist of one or more artificial teeth anchored by crowns on adjacent natural teeth, effectively filling the gap left by missing teeth."
+          body: (
+            <>
+              <img src={dentalImg} alt="dental bridges illustration" className="img-fluid" width={300} />
+              <p>
+              Dental bridges replace missing teeth by connecting an artificial tooth or teeth to neighboring teeth. They
+restore form , function and aesthetics. Teeth naturally support our facial muscles and when we have
+missing teeth, our facial muscles appear sunken and can give us a tired look. One of the options
+available to replace missing teeth are bridges.
+              </p>
+              <p>
+              The placement of bridges involves multiple visits. During your initial consultation with your dentist, your
+oral health will be evaluated and the most suitable type of bridge will be recommended based on different
+factors such as location of the missing teeth and condition of adjacent teeth and gums. Your subsequent
+visit will involve preparing the teeth, the prepared teeth will be digitally scanned and sent to our lab. Once
+your bridge is ready it will be placed and minor adjacements made for proper fit.
+              </p>
+              <p>
+              Dental bridges offer numerous benefits beyond filling the gaps caused by missing teeth. They restore
+your ability to chew and speak properly, maintain the shape of your face, and prevent the surrounding
+teeth from shifting out of position. Dental bridges also enhance your smile, boosting self-confidence and
+oral health.
+              </p>
+              <p>Remember to consult our trusted dentists for your personalised treatment options.</p>
+            </>
+          )
         },
         {
           key: "restorative-dentures",
           title: "Dentures",
-          body: "Dentures are removable appliances that replace missing teeth and surrounding tissues, available as full or partial sets to restore function and aesthetics."
+          body: (
+            <>
+              <p>
+              Dental dentures are removable prosthetic devices that replace missing teeth and surrounding tissues.
+Missing teeth affect not just your appearance but also your ability to chew food properly. Properly chewed
+food allows your body to easily extract a large amount of nutrients it needs to sustain a healthy body and
+mind.
+              </p>
+              <p>
+              Dentures will restore your ability to grind your food so your body does not need to work too hard to
+absorb nutrients. They will also restore your vibrant smile and your youthfull appearance by supporting
+your facial muscles.
+              </p>
+
+              <p><em>Partial Dentures</em></p>
+              <p>
+              Partial dentures like complete dentures are removable prothesis designed to replace missing teeth .
+These are recommended by your dentist if you are not a candidate for a bridge or implants and just lke
+the complete dentures, they restore your dazzling smile and allow you to chew your food properly and
+thoroughly.
+              </p>
+              <p>
+              The dentists at Sinai provide excellent consultation and will present available options for replacing your
+              missing teeth. Our unwavering commitment is to your oral health and your overall well being.
+              </p>
+            </>
+          )
         }
       ]
     },
@@ -336,38 +566,24 @@ const Services = () => {
         {
           key: "emergency-same-day",
           title: "Same day emergencies",
-          body: "Same day emergency services provide immediate dental care for urgent issues such as severe pain, broken teeth, or infections, ensuring prompt relief and treatment."
-        },
-        {
-          key: "emergency-tooth-jaw-pain",
-          title: "tooth pain/jaw pain",
-          body: "Emergency treatment for tooth and jaw pain addresses acute discomfort caused by conditions like tooth decay, abscesses, or TMJ disorders, offering timely relief."
-        }
-      ]
-    },
-    {
-      key: "others",
-      category: "others",
-      content: [
-        {
-          key: "others-sedation",
-          title: "Sedation",
-          body: "Sedation dentistry uses medication to help patients relax during dental procedures, making it suitable for those with dental anxiety or undergoing lengthy treatments."
+          body: (
+            <>
+              <p>
+              Dental emergencies require prompt attention to prevent complications and alleviate pain. Whether its a
+chipped tooth, knocked out tooth, broken jaw, loose artificial tooth, Bleeding, swollen jaw, all these can
+cause excruciating pain.
+              </p>
+              <p>
+              We understand that you need to see a dentist urgently and therefore encourage you to call Sinai for
+              appropriate care for your emergency. We handle your emergency with compassion and skill.
+              </p>
+            </>
+          )
         }
       ]
     }
-    
   ];
 
-  // Sort the content array of each element alphabetically by title
-  const sortedServices = [...services].map((category) => {
-    category.content.sort((serviceA, serviceB) => {
-      const titleA = serviceA.title.toLowerCase();
-      const titleB = serviceB.title.toLowerCase();
-      return titleA.localeCompare(titleB);
-    });
-    return category;
-  })
 
   const toggleCategory = (key) => () => {
     if (selectedCategoryKey && key == selectedCategoryKey) {
@@ -411,7 +627,7 @@ const Services = () => {
         <section className="services">
           <div className="row justify-content-center">
             <div className="cols-12 col-md-10">
-              {sortedServices.map((categoryEl, i) => (
+              {services.map((categoryEl, i) => (
                 <div className={`service-category ${selectedCategoryKey? '': 'ms-5'}`} key={i}>
                   <h3
                     className="text-uppercase heading-3 category-title"
@@ -427,13 +643,13 @@ const Services = () => {
                     categoryEl.content.map((service, j) => (
                       <div className="service" key={j}>
                         
-                        <h4 className="text-capitalize heading-4 category-heading" onClick={showContent(j)} >
+                        <h4 className="text-capitalize heading-4 service-heading" onClick={showContent(j)} >
                           <FontAwesomeIcon 
                             icon={(showHeadingContent == j) ? faCaretDown : faCaretRight} 
                           ></FontAwesomeIcon>
                           {service.title}
                         </h4>
-                        {(showHeadingContent == j) && <div className="heading-content">{service.body}</div>}
+                        {(showHeadingContent == j) && <div className="service-content">{service.body}</div>}
                       </div>
                     ))}
                 </div>

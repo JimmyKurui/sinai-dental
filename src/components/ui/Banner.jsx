@@ -5,7 +5,7 @@ const Banner = ({ image, message }) => {
       <div className="banner d-flex justify-content-center align-items-center"
       style={image ? {backgroundImage: `url(${image})`} : { background: "var(--gradient-color-1)" }}
       >
-        {message && <div className={`banner-message ${isLandingPage? 'animated': ''}`}>
+        {message && <h1 className={`banner-message ${isLandingPage? 'animated': ''}`}>
           <span className="message-slot">
             {message.split("").map((char, index) => (
               <span key={index} className={`char char-${index}`}>
@@ -13,7 +13,7 @@ const Banner = ({ image, message }) => {
               </span>
             ))}
           </span>
-        </div>}
+        </h1>}
     </div>
   );
 };

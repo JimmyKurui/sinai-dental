@@ -43,7 +43,7 @@ const Footer = () => {
                 <a href="" target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={faTwitter} size="lg" className="me-4" />
                 </a>
-                <a href="" target="_blank" rel="noreferrer">
+                <a href="https://www.instagram.com/sinai_dental/" target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={faInstagram} size="lg" className="me-4" />
                 </a>
               </div>

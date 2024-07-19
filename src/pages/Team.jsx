@@ -4,12 +4,14 @@ import { faUserDoctor, faUserAstronaut, faUserNurse } from "@fortawesome/free-so
 import drMatthewImage from "@img/team/dr-matthew-on-mountain.jpeg"
 import drCheptoImage from "@img/team/dr-chepto.jpeg"
 import nursesImage from "@img/team/nurses.jpeg"
-import frontDeskImage from "@img/team/eva-front-desk-main.jpg"
-// import { useState, useEffect } from "react";
+import frontDeskImage from "@img/team/eva-front-desk.jpeg"
+import { useEffect } from "react";
 // import { useIntersectionObserver } from "react-intersection-observer";
 
 const Team = () => {
-  document.title = 'Team | Sinai Dental'
+  useEffect(() => {
+    document.title = 'Team | Sinai Dental'
+  }, []);
   const stockImage = 'https://www.honolulufamilydentist.com/wp-content/uploads/2018/11/GettyImages-858252120-1170x550.jpg';
   return (
     <>
@@ -28,7 +30,7 @@ const Team = () => {
             <div className="team-member-figure col-12 col-md-4 mb-3 mb-md-0">
               <img
                 src={drMatthewImage}
-                alt="Team Member"
+                alt="Dcotor Matthew Rubona"
               />
             </div>
             <div className="team-member-description col-12 col-md-8">
@@ -48,7 +50,7 @@ const Team = () => {
             <div className="team-member-figure col-12 col-md-6 mb-3 mb-md-0">
               <img
                 src={drCheptoImage}
-                alt="Team Member"
+                alt="Doctor Cheptoris Ashar"
               />
             </div>
             <div className="team-member-description col-12 col-md-6">
@@ -66,7 +68,7 @@ const Team = () => {
             <div className="team-member-figure col-12 col-md-6 mb-3 mb-md-0">
               <img
                 src={nursesImage}
-                alt="Team Member"
+                alt="Nurses Sinai Dental Practice"
               />
             </div>
             <div className="team-member-description col-12 col-md-6">
@@ -80,7 +82,7 @@ const Team = () => {
               <p>
               Nervous about dental procedures? Our nurses are experts in calming nerves. They hold your hand, explain each step, and make sure you feel safe. After your treatment, our nurses guide you through aftercare instructions. They ensure your recovery is smooth and pain-free.
               </p>
-              <p>The best part? Our nurses celebrate your victories. When you leave with a brighter smile, they share in your joy. Remember, our nursing team is here to make your Sinai Dental experience exceptional.</p>
+              <p>The best part? Our nurses celebrate your victories. When you leave with a brighter smile, they share in your joy. Remember, our nursing team is here to make your Sinai Dental experience exceptional😊.</p>
             </div>
           </div>
 
@@ -88,7 +90,7 @@ const Team = () => {
             <div className="team-member-figure col-12 col-md-6 mb-3 mb-md-0">
               <img
                 src={frontDeskImage}
-                alt="Team Member"
+                alt="Eva Sinai Dental Practice"
               />
             </div>
             <div className="team-member-description col-12 col-md-6">

@@ -2,13 +2,26 @@ import {Link} from 'react-router-dom'
 import Logo from '@img/sinai-dental-logo.jpg'
 
 const Navbar = () => {
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbar = document.querySelector('.navbar');
+        function onScroll() {
+            if (window.scrollY >= window.innerHeight) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+    
+        window.addEventListener('scroll', onScroll);
+    });
+
     return (
         <header>
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid container-md-fluid">
                     <div className="navbar-brand" >
                         <Link to="/">
-                            <img src={Logo} alt="Sinai Dental Logo" className='logo' />
+                            <img src={Logo} alt="Sinai Dental Practice Logo" className='logo' />
                         </Link>
                     </div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
