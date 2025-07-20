@@ -1,0 +1,56 @@
+// @use "config" as *;
+
+
+section:not(.banner) {
+  margin: 2rem auto;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #{$theme-color-1} !important;
+}
+
+footer {
+  background-color: #{$accent-color};
+
+* {
+  color: #fff;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif !important;
+}
+
+
+
+p {
+  line-height: 2rem;
+}
+
+ul {
+    list-style: circle;
+    li {
+      padding: 10px;
+      &:hover {
+        color: #{$theme-color-1};
+        scale: 1.2;
+      }
+    }
+  }
+
+svg {
+  padding: 0px 10px;
+}
