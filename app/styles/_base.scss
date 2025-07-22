@@ -41,31 +41,30 @@ header {
     background-color: rgba(245, 255, 250, 0.6);
     opacity: 1;
     transition: background-color 0.3s, opacity 0.3s;
+    animation: fade-on-scroll linear;
+    animation-timeline: scroll();
 
     * {
       height: inherit;
-    }
-    &.scrolled {
-      transform: translate(-50%, 0%);
-      opacity: 0.3;
     }
     &:hover {
       background-color: rgb(245, 255, 250);
       opacity: 1;
     }
-    .container, .container-fluid {
-        height: 100%;
+    .container,
+    .container-fluid {
+      height: 100%;
     }
     .navbar-brand {
-        width: 40%;
-        height: 100%;
-        display: flex;
-        align-items: center;
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: center;
     }
     .logo {
-        height: 100%;
-        width: auto;
-        border-radius: 50%;
+      height: 100%;
+      width: auto;
+      border-radius: 50%;
     }
     .navbar-nav {
       min-width: 70%;
@@ -85,6 +84,17 @@ header {
         color: var(--theme-color-1);
       }
     }
+  }
+}
+
+@keyframes fade-on-scroll {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 0.3;
   }
 }
 
@@ -192,7 +202,7 @@ header {
     height: 100%;
   }
 }
-.hero-text {
+.banner-text {
   position: absolute;
   top: 60%;
   // bottom: 5%;
@@ -224,6 +234,85 @@ header {
     background-color: rgb(245, 255, 250);
     padding: 10px;
   }
+
+  .pentagon-wrapper {
+    @media (min-width: 768px) {
+      position: relative;
+      margin: 0 auto;
+      min-height: 500px;
+
+      .pentagon-image {
+        mask: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0) 25%,
+          rbga(0, 0, 0, 1) 60%,
+          rgba(0, 0, 0, 1) 100%
+        );
+        -webkit-mask: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0) 100%,
+          rgba(0, 0, 0, 1) 25%,
+          rbga(0, 0, 0, 1) 60%,
+          rgba(0, 0, 0, 0) 100%
+        );
+
+        img {
+          position: absolute;
+          left: 50%;
+          width: 50%;
+          height: 90%;
+          transform: translate(-50%, 0%);
+        }
+      }
+
+      .pentagon-card {
+        position: absolute;
+        width: 50%;
+        height: 138px;
+        // background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+        padding: 8px;
+      }
+      .pentagon-position-1 {
+        /* Top left */
+        left: 15%;
+        top: 10%;
+        transform: translate(-50%, 0);
+      }
+      .pentagon-position-2 {
+        /* Bottom left */
+        left: 0%;
+        top: 50%;
+        transform: translate(-50%, 0);
+      }
+      .pentagon-position-3 {
+        /* Top center */
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, 0);
+        width: 80%;
+      }
+      .pentagon-position-4 {
+        /* Bottom right */
+        right: 0%;
+        top: 50%;
+        transform: translate(50%, 0);
+      }
+      .pentagon-position-5 {
+        /* Top right */
+        right: 15%;
+        top: 10%;
+        transform: translate(50%, 0);
+      }
+    }
+  }
 }
 .kpis {
   width: 100%;
@@ -249,6 +338,74 @@ header {
     }
     &.bg-warning {
       box-shadow: 0 10px 40px 0px rgb(0, 0, 0, 0.5);
+    }
+  }
+}
+section.reviews {
+  overflow: hidden;
+
+  .reviews-pane {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 300px; 
+    text-align: left;
+    will-change: transform;
+    cursor: grab;
+
+    .review-card {
+      font-size: 0.9rem;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 0 10px;
+      height: 70%;
+      aspect-ratio: 1.5;
+      background: #fff;
+      box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .review-card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .review-card-avatar {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 10px;
+          border: 1px solid #eee;
+        }
+
+        .review-card-author {
+          font-weight: bold;
+        }
+      }
+      .review-card-body {
+        .review-card-text {
+          display: -webkit-box;
+          line-clamp: 4;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0 0 10px;
+        }
+        .review-card-source {
+          font-size: 14;
+          text-transform: capitalize;
+        }
+        .review-card-rating {
+          color: #e2e200;
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 }

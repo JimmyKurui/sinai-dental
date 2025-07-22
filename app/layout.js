@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import BootstrapClient from './components/BootstrapClient';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FloatingButton from './components/ui/FloatingButton';
 import './globals.scss';
 
 config.autoAddCss = false
@@ -36,8 +37,8 @@ export default function RootLayout({ children }) {
         <main className="main-content">
           {children}
         </main>
+        <FloatingButton />
         <Footer />
-        <script type="module" src="@js/main.js"></script>
         <GoogleAnalytics gaId="G-4ZCGYGJZEY" />
         <BootstrapClient />
       </body>
