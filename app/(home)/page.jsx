@@ -8,10 +8,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Banner from "@/components/ui/Banner";
 import ImageBox from "@/components/ui/ImageBox";
-import Reviews from "../components/reviews/Reviews";
+import HexagonLayout from "@/components/ui/geometricBlocks/HexagonalLayout";
+import valuePropositions from "./valuePropositions";
+import Reviews from "@/components/reviews/Reviews";
 import reviews from "./reviews";
 
-import chairFocusedImage from "@img/office/room1_02.jpg";
 import surgeryRoomImage from "@img/office/surgery-room.jpg";
 import receptionImage from "@img/office/reception_renovation.jpg";
 
@@ -48,53 +49,10 @@ const Home = () => {
                 care.
               </p>
             </div>
+
             <div>
               <h2 className="heading">Personalized Care</h2>
-              <div className="pentagon-wrapper">
-                <div className="pentagon-image">
-                  <Image
-                    src={chairFocusedImage}
-                    alt="spotlight dental surgery chair"
-                  />
-                </div>
-                <div className="pentagon-card pentagon-position-1">
-                  <h4>Holisitc</h4>
-                  <p>
-                    We save your long-term health by finding the root cause of
-                    your discomfort - not just the symptoms
-                  </p>
-                </div>
-                <div className="pentagon-card pentagon-position-2">
-                  <h4>Long Term Value</h4>
-                  <p>
-                    High value for your investment through a long lasting
-                    solution, escaping unnecessary surgeries and future spending
-                  </p>
-                </div>
-                <div className="pentagon-card pentagon-position-3">
-                  <h4>Trusted by Thousands, Growing Rapidly</h4>
-                  <p>
-                    It mirrors our commitment to excellence and innovation, just
-                    like top-performing dental groups worldwide. We continuously
-                    refine our ways to exceed your expectations on every visit
-                  </p>
-                </div>
-                <div className="pentagon-card pentagon-position-4">
-                  <h4>Comprehensive Care Under One Roof</h4>
-                  <p>
-                    From routine cleanings to specialty procedures, our
-                    integrated approach means you receive all your dental care
-                    without referrals or delays
-                  </p>
-                </div>
-                <div className="pentagon-card pentagon-position-5">
-                  <h4>Advanced Technology</h4>
-                  <p>
-                    Faster procedures, comfort, and precise treatment using the
-                    latest dental tech in 3D printing and digital imaging
-                  </p>
-                </div>
-              </div>
+              <HexagonLayout textBlocks={valuePropositions} />
               <div className="call-to-action mt-5">
                 <p>
                   Our awesome team looks forward to receiving you and we hope to
@@ -110,6 +68,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>
