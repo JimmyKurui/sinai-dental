@@ -9,9 +9,11 @@ import {
 import Banner from "@/components/ui/Banner";
 import ImageBox from "@/components/ui/ImageBox";
 import HexagonLayout from "@/components/ui/geometricBlocks/HexagonalLayout";
-import valuePropositions from "./valuePropositions";
 import Reviews from "@/components/reviews/Reviews";
+import FeaturedMediaCard from "@/components/ui/FeaturedMediaCard";
+import valuePropositions from "./valuePropositions";
 import reviews from "./reviews";
+import featuredPieces from "./featuredPieces";
 
 import surgeryRoomImage from "@img/office/surgery-room.jpg";
 import receptionImage from "@img/office/reception_renovation.jpg";
@@ -78,9 +80,11 @@ const Home = () => {
           <div className="row">
             <h2 className="heading">Services</h2>
             <div className="col-12 col-md-6 order-2 order-md-0">
-              <p>
-                Access our rich catalog of services to meet your unique needs.
-              </p>
+              <span>
+                <span>With over <strong>10 years</strong> of experience we provide a rich catalog of services to meet your unique needs.</span>
+                <br />
+                <span>*Average General Treatment takes 1 to 3 hours</span>
+              </span>
               <ul>
                 <li>Preventative Care</li>
                 <li>Cosmetic Dentistry</li>
@@ -97,27 +101,6 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="kpis my-4">
-        <div className="d-flex justify-content-md-center border-bottom border-top py-4">
-          <h2 className="d-none">KPIs</h2>
-          <div className="inner bg-info my-3">
-            <FontAwesomeIcon icon={faHeart} size="lg" className="py-2" />
-            <h3 className="py-3">Clients</h3>
-            <p>Over 4000</p>
-          </div>
-          <div className="inner bg-warning">
-            <FontAwesomeIcon icon={faTrophy} size="lg" className="py-2 " />
-            <h3 className="py-3">Average General Treatment</h3>
-            <p>3 hours</p>
-          </div>
-          <div className="inner bg-success my-3">
-            <FontAwesomeIcon icon={faLineChart} size="lg" className="py-2" />
-            <h3 className="py-3">Years of XP</h3>
-            <p>10</p>
-          </div>
-        </div>
-      </section>
-
       <section className="reviews">
         <h2 className="ms-5 px-3">Latest Reviews</h2>
         <Reviews reviews={reviews} />
@@ -130,7 +113,7 @@ const Home = () => {
             rel="noopener noreferrer"
             className="px-3"
           >
-            Google
+            Add Google Review
           </Link>
           <Link
             href="https://www.facebook.com/sinaidental/reviews"
@@ -139,13 +122,37 @@ const Home = () => {
             rel="noopener noreferrer"
             className="px-3"
           >
-            Facebook
+            Add Facebook Recommendation
           </Link>
         </div>
       </section>
 
-      <section className="reviews">
-        <h2 className="">Feedback</h2>
+      <section className="featured">
+        <h2 className="ms-5 px-3">Featured</h2>
+        <div className="container-fluid">
+          <div className="row gy-3">
+            <div className="col-12 col-md-6 col-lg-4">
+              <FeaturedMediaCard url={featuredPieces[0].cite} video={featuredPieces[0].video} caption={featuredPieces[0].caption} />
+            </div>
+            <div className="col-12 col-md-6 col-lg-4">
+              <FeaturedMediaCard url={featuredPieces[1].cite} caption={featuredPieces[1].caption} />
+            </div>
+            <div className="col-12 col-lg-4 minor-featured">
+              <div className="row gy-2">
+                {featuredPieces.slice(2).map((piece, idx) => (
+                  <div className="col-12 col-md-4 col-lg-12">
+                    <FeaturedMediaCard
+                      key={idx}
+                      url={piece.cite}
+                      thumbnail={piece.thumbnail}
+                      caption={piece.caption}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="steps">

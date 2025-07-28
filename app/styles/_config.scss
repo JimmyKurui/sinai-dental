@@ -28,7 +28,6 @@ $heading-color: #555;
 
 * {
     box-sizing: border-box;
-    // height: inherit;
 }
 
 body {
@@ -39,21 +38,21 @@ body {
 }
 
 .bg-app-accent {
-    background-color: var(--accent-color);
-    color: var(--theme-color-2);
+    background-color: var(--accent-color) !important;
+    color: var(--theme-color-2) !important;
 }
 
 .bg-app-primary {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
 }
 .bg-app-primary-light {
-    background-color: var(--theme-color-1);
-    color: var(--secondary-color);
+    background-color: var(--theme-color-1) !important;
+    color: var(--secondary-color) !important;
 }
 .text-app-primary {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 .text-app-accent {
-    color: var(--theme-color-1);
+    color: var(--theme-color-1) !important;
 }

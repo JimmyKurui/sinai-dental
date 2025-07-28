@@ -1,5 +1,3 @@
-"use client";
-
 const Banner = ({ image, message, classes = "", children }) => {
   return (
     <>
