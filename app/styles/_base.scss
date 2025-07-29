@@ -124,26 +124,55 @@ header {
 /* ============================= HOME ==========================  */
 /* -------------------- HERO SECTION ---------------------- */
 .banner {
+  position: relative;
   width: 100%;
   min-height: 300px;
   height: 100vh;
-  background-position: 50% 30%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 
-  &::after {
-    content: "";
-    display: block;
+  blockquote {
+    position: absolute;
+    width: 75%;
+    margin: 0;
+    font-weight: 300;
+    font-style: oblique;
+    line-height: 25px;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+      width: 30%;
+    }
+  }
+
+  .image-wrapper {
+    position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at center,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0) 70%,
-        rgba(0, 0, 0, 0.3) 90%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    background-position: 50% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9) 90%);
+      z-index: 1;
+    }
+  }
+
+  .banner-text {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 60%;
+    // bottom: 5%;
+    left: 5%;
+    overflow: hidden;
+    padding: 20px;
+    max-width: 60vmax;
+    font-size: 0.8rem;
+    background: rgb(125, 125, 125, 1);
+    z-index: 3;
   }
 
   .banner-message {
@@ -154,17 +183,17 @@ header {
     color: whitesmoke;
     filter: brightness(1.5);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
 
-  .animated .message-slot {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: type-and-delete 7s infinite 3s;
-  }
+    .animated .message-slot {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: type-and-delete 7s infinite 3s;
+    }
 
-  .animated .message-slot .char {
-    animation: type 0.5s steps(1) infinite;
+    .animated .message-slot .char {
+      animation: type 0.5s steps(1) infinite;
+    }
   }
 }
 
@@ -192,58 +221,8 @@ header {
   }
 }
 
-.image-wrapper {
-  height: 500px;
-  position: relative;
-  display: inline-block;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background: linear-gradient(to right,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 0.8) 25%,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.5) 75%,
-        rgba(0, 0, 0, 1) 100%);
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.banner-text {
-  position: absolute;
-  top: 60%;
-  // bottom: 5%;
-  left: 5%;
-  overflow: hidden;
-  padding: 20px;
-  max-width: 60vmax;
-  font-size: 0.8rem;
-  background: rgb(125, 125, 125, 1);
-  z-index: 3;
-}
-
 .hero {
   margin: 2rem auto;
-
-  blockquote {
-    width: 100%;
-    margin: 0;
-    font-family: "Raleway", "Lucida Sans", serif;
-    font-weight: 700;
-    font-style: oblique;
-    line-height: 25px;
-
-    @media (min-width: 768px) {
-      width: 40%;
-    }
-  }
 
   .call-to-action {
     float: none;
@@ -444,8 +423,10 @@ section.featured {
     >[class^="col-"],
     >[class*=" col-"] {
       height: 300px;
+
       &.minor-featured {
         height: auto;
+
         [class^="col-"],
         [class*=" col-"] {
           height: 300px;
@@ -454,8 +435,10 @@ section.featured {
 
       @media (min-width: 576px) {
         height: 500px;
+
         &.minor-featured {
           height: 500px;
+
           [class^="col-"],
           [class*=" col-"] {
             height: 100%;
@@ -465,6 +448,7 @@ section.featured {
 
       @media (min-width: 992px) {
         &.minor-featured {
+
           [class^="col-"],
           [class*=" col-"] {
             height: 32%;
@@ -494,7 +478,7 @@ section.featured {
         background: rgb(21 21 21 / 90%);
         overflow: hidden;
         mask: linear-gradient(rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));
-        
+
         &.frame {
           height: 100%;
           // mask: linear-gradient(rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.5));
@@ -517,6 +501,7 @@ section.featured {
           iframe body {
             scrollbar-width: thin;
           }
+
           video {
             object-fit: fill;
           }
@@ -576,14 +561,36 @@ section.featured {
 
 // ===================== TEAM PAGE ===============
 
-#team-section {
+#team {
   .team-member {
     margin: 3rem 0;
-    animation: slide-in;
-  }
 
-  .team-member-description {
-    order: 1;
+    .team-member-figure {
+      animation: slide-in;
+
+      img {
+        filter: drop-shadow(2px 4px 6px #000);
+        border-radius: 10px;
+      }
+    }
+
+    .team-member-description {
+      order: 1;
+
+      h3,
+      h4,
+      h5 {
+        text-align: center;
+      }
+
+      @media (min-width: 992px) {
+        h3,
+        h4,
+        h5 {
+          text-align: left;
+        }
+      }
+    }
   }
 
   .team-member-figure {
@@ -598,7 +605,7 @@ section.featured {
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .team-member:nth-child(even) {
       .team-member-figure {
         order: 2;
@@ -610,8 +617,6 @@ section.featured {
     color: var(--primary-color);
   }
 }
-
-@keyframes slide-in {}
 
 #news-gallery-section {
   .article {

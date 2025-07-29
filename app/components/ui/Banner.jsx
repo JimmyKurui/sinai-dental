@@ -1,9 +1,9 @@
 const Banner = ({ image, message, classes = "", children }) => {
   return (
-    <>
+    <div className="banner">
       {children}
       <div
-        className="banner position-relative d-flex justify-content-center align-items-center"
+        className="image-wrapper d-flex justify-content-center align-items-center"
         style={
           image
             ? { backgroundImage: `url(${image?.src})` }
@@ -22,7 +22,7 @@ const Banner = ({ image, message, classes = "", children }) => {
           </h1>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
