@@ -4,9 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight, faCaretDown, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
-import Banner from "../components/ui/Banner";
-import bannerImg from "@img/office/room-1-closeup.jpg";
+import Banner from "@/components/ui/Banner";
+import bannerImg from "@img/office/room2_chair.jpg";
+// import bannerImg from "@img/office/room1_01.jpg";
 import dentalImg from "@img/illustrations/dental-bridges.jpg";
+import BentoGrid from "@/components/ui/BentoGrid";
 
 
 const Services = () => {
@@ -250,26 +252,26 @@ const Services = () => {
           body: (
             <>
               <p>
-              So what should I expect during a Root Canal procedure? Is the procedure painful? There are common
-misconceptions that root canals cause pain and/or illness and should be avoided at all costs. The exact
-opposite is true. Infact, root canal treatment has saved countless number of teeth and has led to
-restoration of function and aesthetics. Thanks to advances in dentistry, your root canal treatment can be
-done with no discomfort.
+                So what should I expect during a Root Canal procedure? Is the procedure painful? There are common
+                misconceptions that root canals cause pain and/or illness and should be avoided at all costs. The exact
+                opposite is true. Infact, root canal treatment has saved countless number of teeth and has led to
+                restoration of function and aesthetics. Thanks to advances in dentistry, your root canal treatment can be
+                done with no discomfort.
               </p>
               <p>
-              Getting a root canal is alot like getting a filling except the appointments may be a little longer. The
-procedure involves numbing the gum around the problematic tooth. Once you are fully numb the third
-layer of the tooth called the pulp is accessed and all the infected tissue is carefully removed. A filling
-called gutta percha is then placed thereafter. We use high quality gutta percha and sealer material . After
-your root canal visit, a set of instructions will be given to you.
+                Getting a root canal is alot like getting a filling except the appointments may be a little longer. The
+                procedure involves numbing the gum around the problematic tooth. Once you are fully numb the third
+                layer of the tooth called the pulp is accessed and all the infected tissue is carefully removed. A filling
+                called gutta percha is then placed thereafter. We use high quality gutta percha and sealer material . After
+                your root canal visit, a set of instructions will be given to you.
               </p>
               <p>
-              Root canaled teeth are generally more brittle and are therefore susceptible to fractures. In order to
-              ensure longevity, a tooth that has been root canaled must be crowned.
+                Root canaled teeth are generally more brittle and are therefore susceptible to fractures. In order to
+                ensure longevity, a tooth that has been root canaled must be crowned.
               </p>
               <p>
-              At sinai dental we ensure that your root canal is done in a calm and relaxed environment. Our dentists
-              are availabe should you require emergency dental treatment due to pain.
+                At sinai dental we ensure that your root canal is done in a calm and relaxed environment. Our dentists
+                are availabe should you require emergency dental treatment due to pain.
               </p>
             </>
           )
@@ -280,16 +282,16 @@ your root canal visit, a set of instructions will be given to you.
           body: (
             <>
               <p>
-              I have a great fear/ anxiety of dentists and yet I badly need dental intervention.
+                I have a great fear/ anxiety of dentists and yet I badly need dental intervention.
               </p>
               <p>
-              Does the above statement apply to you? How can the team at Sinai dental allay your fears and work with
-              you to achieve optimal oral health.
+                Does the above statement apply to you? How can the team at Sinai dental allay your fears and work with
+                you to achieve optimal oral health.
               </p>
               <p>
-              At Sinai dental we encourage you to tell us about your fear, we schedule some extra time for the
-appointment, we also employ the TELL, SHOW and DO technique and we offer sedation treatment as
-an option to help alleviate anxiety.
+                At Sinai dental we encourage you to tell us about your fear, we schedule some extra time for the
+                appointment, we also employ the TELL, SHOW and DO technique and we offer sedation treatment as
+                an option to help alleviate anxiety.
               </p>
               <p>We pledge to support our patients in achieving the best oral health.</p>
             </>
@@ -300,28 +302,28 @@ an option to help alleviate anxiety.
     {
       key: "cosmetic",
       category: "cosmetic",
-      content: [ 
+      content: [
         {
           key: "composite-bonding",
           title: "Composite bonding (dental bonding)",
           body: (
             <>
               <p>Dental bonding involves applying a tooth-coloured resin material to the affected teeth. This material can
-              change the shape, size, or color of the tooth. Dental bonding is commonly used for cosmetic
-              improvements to your smile. It can conceal chips or cracks in your teeth, camouflage tooth discoloration,
-              close gaps and spaces between teeth, make your teeth appear longer and alter the shape of your teeth
+                change the shape, size, or color of the tooth. Dental bonding is commonly used for cosmetic
+                improvements to your smile. It can conceal chips or cracks in your teeth, camouflage tooth discoloration,
+                close gaps and spaces between teeth, make your teeth appear longer and alter the shape of your teeth
               </p>
               <p>Before dental bonding, your dentist will discuss your cosmetic goals with you. Dental X-rays and an
-              examination of your teeth and gums ensure your eligibility for the procedure. During the bonding
-              procedure, your dentist selects a shade of composite resin material that matches your natural teeth color.
+                examination of your teeth and gums ensure your eligibility for the procedure. During the bonding
+                procedure, your dentist selects a shade of composite resin material that matches your natural teeth color.
               </p>
               <p>The same composite resin material used in dental bonding can also be used to fill cavities, replace old
-              silver dental fillings with a more cosmetic alternative and protect exposed teeth roots due to gum
-              recession.
+                silver dental fillings with a more cosmetic alternative and protect exposed teeth roots due to gum
+                recession.
               </p>
               <p>
-              Remember that dental bonding is a versatile and common cosmetic dentistry option, allowing you to
-              achieve a more confident smile. Schedule an appointment at Sinai Dental with one of dentists.
+                Remember that dental bonding is a versatile and common cosmetic dentistry option, allowing you to
+                achieve a more confident smile. Schedule an appointment at Sinai Dental with one of dentists.
               </p>
             </>
           )
@@ -332,23 +334,23 @@ an option to help alleviate anxiety.
           body: (
             <>
               <p>
-              Tooth whitening, also known as dental bleaching, is a popular cosmetic dental procedure aimed at
-enhancing the appearance of teeth by making them appear whiter and brighter. Tooth whitening primarily
-involves the use of peroxide-based agents to break down stains and discolorations on the tooth surface.
-Our dentists carefully evaluate patients before recommending tooth whitening.
+                Tooth whitening, also known as dental bleaching, is a popular cosmetic dental procedure aimed at
+                enhancing the appearance of teeth by making them appear whiter and brighter. Tooth whitening primarily
+                involves the use of peroxide-based agents to break down stains and discolorations on the tooth surface.
+                Our dentists carefully evaluate patients before recommending tooth whitening.
               </p>
               <p>
-              The safety and efficacy of peroxides are well-established, but potential complications should be
-              considered. Some common side effects include tooth sensitivity and mild gum irritation.
+                The safety and efficacy of peroxides are well-established, but potential complications should be
+                considered. Some common side effects include tooth sensitivity and mild gum irritation.
               </p>
               <h5>Types of Tooth Whitening:</h5>
               <h5>At-Home Tooth Bleaching:</h5>
               <p>Patients use custom-made trays filled with a low concentration of peroxide gel.This method allows
-              gradual whitening over several weeks.
+                gradual whitening over several weeks.
               </p>
               <h5>In-Office Whitening:</h5>
               <p>Performed by dental professionals .High-concentration peroxide gels are applied directly to the teeth and
-              results are achieved in a single session.
+                results are achieved in a single session.
               </p>
             </>
           )
@@ -365,20 +367,20 @@ Our dentists carefully evaluate patients before recommending tooth whitening.
           body: (
             <>
               <p>Traditional braces, also known as metal braces, have been a reliable and effective orthodontic treatment
-for decades. Traditional metal braces are durable and can withstand the forces required to move teeth
-into proper alignment.They are also cost-effective compared to some other orthodontic options and are
-versatile in treating Complex Cases:
-</p>
-<p>
-Metal brackets are bonded to the teeth. An archwire connects the brackets, applying gentle pressure to
-guide teeth into their desired positions. Regular adjustments by the dentist ensures progress throughout
-the treatment.
-</p>
-<p>
-Remember that traditional braces remain a trusted choice for achieving a beautifully aligned smile. At
-sinai dental each patient’s treatment plan is tailored to their unique needs so please reach out to us for
-any specific concerns or questions for personalized advice.
-</p>
+                for decades. Traditional metal braces are durable and can withstand the forces required to move teeth
+                into proper alignment.They are also cost-effective compared to some other orthodontic options and are
+                versatile in treating Complex Cases:
+              </p>
+              <p>
+                Metal brackets are bonded to the teeth. An archwire connects the brackets, applying gentle pressure to
+                guide teeth into their desired positions. Regular adjustments by the dentist ensures progress throughout
+                the treatment.
+              </p>
+              <p>
+                Remember that traditional braces remain a trusted choice for achieving a beautifully aligned smile. At
+                sinai dental each patient’s treatment plan is tailored to their unique needs so please reach out to us for
+                any specific concerns or questions for personalized advice.
+              </p>
             </>
           )
         },
@@ -388,18 +390,18 @@ any specific concerns or questions for personalized advice.
           body: (
             <>
               <p>
-              Clear aligners refers to a series of clear dental appliances custom-formed to the shape of a patient’s
-teeth. These clear aligners gradually improve both appearance and function by applying gentle,
-consistent pressure to the teeth. Clear aligners are less noticeable than traditional braces and are more
-convenient as patients can remove aligners for eating, brushing, and special occasions.
+                Clear aligners refers to a series of clear dental appliances custom-formed to the shape of a patient’s
+                teeth. These clear aligners gradually improve both appearance and function by applying gentle,
+                consistent pressure to the teeth. Clear aligners are less noticeable than traditional braces and are more
+                convenient as patients can remove aligners for eating, brushing, and special occasions.
               </p>
               <p>
-              Clear aligners can achieve many tooth movements, but some cases may still be better suited for
-traditional braces or a combination of techniques. Our dentists assess each patient’s unique
-requirements to determine the most suitable treatment plan.
+                Clear aligners can achieve many tooth movements, but some cases may still be better suited for
+                traditional braces or a combination of techniques. Our dentists assess each patient’s unique
+                requirements to determine the most suitable treatment plan.
               </p>
               <p>
-              Consult with your dentist at Sinai Dental to explore whether Clear aligners is the right choice for you.
+                Consult with your dentist at Sinai Dental to explore whether Clear aligners is the right choice for you.
               </p>
             </>
           )
@@ -416,28 +418,28 @@ requirements to determine the most suitable treatment plan.
           body: (
             <>
               <p>
-              Dental implants serve as artificial tooth roots made of biocompatible materials, typically titanium. They
-basically hold dental crowns, bridges and dentures in place.Dental implants are a wonderful way to keep
-your smile intact. They provide support for your facial muscles and they prevent bone loss by stimulating
-the jaw bone. Normally your jaw bone will deteriorate with missing teeth, however, dental implants can
-prevent that deterioration.
+                Dental implants serve as artificial tooth roots made of biocompatible materials, typically titanium. They
+                basically hold dental crowns, bridges and dentures in place.Dental implants are a wonderful way to keep
+                your smile intact. They provide support for your facial muscles and they prevent bone loss by stimulating
+                the jaw bone. Normally your jaw bone will deteriorate with missing teeth, however, dental implants can
+                prevent that deterioration.
               </p>
               <p>
-              During the implant process, the implant is carefully positioned in the jawbone during a minor surgical
-procedure which typically lasts 1 to 2 hours. Over time (approximately 3 to 6 months) the implant fuses
-with the bone, creating a strong bond. An abutment (connector) is attached to the implant.A custom-
-made crown (artificial tooth) is then secured to the abutment. Implant placement is usually painless as its
-done under local anesthesia and the healing time varies but most patients resume normal activities
-quickly.
+                During the implant process, the implant is carefully positioned in the jawbone during a minor surgical
+                procedure which typically lasts 1 to 2 hours. Over time (approximately 3 to 6 months) the implant fuses
+                with the bone, creating a strong bond. An abutment (connector) is attached to the implant.A custom-
+                made crown (artificial tooth) is then secured to the abutment. Implant placement is usually painless as its
+                done under local anesthesia and the healing time varies but most patients resume normal activities
+                quickly.
               </p>
               <p>
-              Implants look, feel, and function like natural teeth and with proper care, implants can last a lifetime.
-              Enjoy your favorite foods without restrictions.
+                Implants look, feel, and function like natural teeth and with proper care, implants can last a lifetime.
+                Enjoy your favorite foods without restrictions.
               </p>
               <p>
-              At Sinai dental our skilled dentist will assess your suitability for implants. Following this assessment all
-processes involved in implant treatment will be discussed with you so you can make an informed choice.
-Remember implants provide you with the best alternative to a healthy mouth when teeth are missing.
+                At Sinai dental our skilled dentist will assess your suitability for implants. Following this assessment all
+                processes involved in implant treatment will be discussed with you so you can make an informed choice.
+                Remember implants provide you with the best alternative to a healthy mouth when teeth are missing.
               </p>
             </>
           )
@@ -448,20 +450,20 @@ Remember implants provide you with the best alternative to a healthy mouth when 
           body: (
             <>
               <p>
-              Third molar extractions, commonly known as wisdom teeth removal, are a frequent procedure in
-dentistry. Mandibular third molars (also called lower wisdom teeth) are the most frequently extracted
-teeth. These molars typically develop between the ages of 8 to 15 and erupt between 17 to 22 years old.
-Due to their delayed eruption, mandibular third molars are often impacted.
+                Third molar extractions, commonly known as wisdom teeth removal, are a frequent procedure in
+                dentistry. Mandibular third molars (also called lower wisdom teeth) are the most frequently extracted
+                teeth. These molars typically develop between the ages of 8 to 15 and erupt between 17 to 22 years old.
+                Due to their delayed eruption, mandibular third molars are often impacted.
               </p>
               <p>
-              Removal of wisdom teeth is a delicate procedure because of their proximity to the nerves which supply
-feeling to the lips, cheeks and tongue. The close proximity of mandibular third molars to the nerve poses
-a risk of nerve damage during extraction. Quantifying this risk by carefully assessing the tooth and taking
-radiographs is therefore important.
+                Removal of wisdom teeth is a delicate procedure because of their proximity to the nerves which supply
+                feeling to the lips, cheeks and tongue. The close proximity of mandibular third molars to the nerve poses
+                a risk of nerve damage during extraction. Quantifying this risk by carefully assessing the tooth and taking
+                radiographs is therefore important.
               </p>
               <p>
-              When it is necessary to remove your tooth for your overall health, our dentists at Sinai keep your comfort
-              in mind.
+                When it is necessary to remove your tooth for your overall health, our dentists at Sinai keep your comfort
+                in mind.
               </p>
             </>
           )
@@ -478,20 +480,20 @@ radiographs is therefore important.
           body: (
             <>
               <p>
-              A dental crown is a tooth-shaped cap that replaces your natural tooth above the gum line.It serves
-various purposes, including strengthening weak teeth, improving aesthetics, and restoring
-function.Getting a dental crown typically involves two visits:
+                A dental crown is a tooth-shaped cap that replaces your natural tooth above the gum line.It serves
+                various purposes, including strengthening weak teeth, improving aesthetics, and restoring
+                function.Getting a dental crown typically involves two visits:
               </p>
               <p>
-              Your first visit involves numbing the neighbouring teeth and gum area around the tooth receiving the
-crown. Removing any old restorations or decay from the tooth and thereafter reshaping the tooth to
-prepare it for the crown. We then digitally scan your tooth and send it to a lab for your permanent crown
-to be made. We place a temporary crown and ask you to come in for a second visit where we fit the
-permanent crown.
+                Your first visit involves numbing the neighbouring teeth and gum area around the tooth receiving the
+                crown. Removing any old restorations or decay from the tooth and thereafter reshaping the tooth to
+                prepare it for the crown. We then digitally scan your tooth and send it to a lab for your permanent crown
+                to be made. We place a temporary crown and ask you to come in for a second visit where we fit the
+                permanent crown.
               </p>
               <p>
-              There are different types of crowns including ceramic crowns, gold crowns, porcelain fused to metal
-              crowns and stainless steel crowns.
+                There are different types of crowns including ceramic crowns, gold crowns, porcelain fused to metal
+                crowns and stainless steel crowns.
               </p>
               <p>Our dentists at Sinai are happy to discuss and recommend a crown type specific to your needs.</p>
             </>
@@ -504,23 +506,23 @@ permanent crown.
             <>
               <Image src={dentalImg} alt="dental bridges illustration" className="img-fluid" width={300} />
               <p>
-              Dental bridges replace missing teeth by connecting an artificial tooth or teeth to neighboring teeth. They
-restore form , function and aesthetics. Teeth naturally support our facial muscles and when we have
-missing teeth, our facial muscles appear sunken and can give us a tired look. One of the options
-available to replace missing teeth are bridges.
+                Dental bridges replace missing teeth by connecting an artificial tooth or teeth to neighboring teeth. They
+                restore form , function and aesthetics. Teeth naturally support our facial muscles and when we have
+                missing teeth, our facial muscles appear sunken and can give us a tired look. One of the options
+                available to replace missing teeth are bridges.
               </p>
               <p>
-              The placement of bridges involves multiple visits. During your initial consultation with your dentist, your
-oral health will be evaluated and the most suitable type of bridge will be recommended based on different
-factors such as location of the missing teeth and condition of adjacent teeth and gums. Your subsequent
-visit will involve preparing the teeth, the prepared teeth will be digitally scanned and sent to our lab. Once
-your bridge is ready it will be placed and minor adjacements made for proper fit.
+                The placement of bridges involves multiple visits. During your initial consultation with your dentist, your
+                oral health will be evaluated and the most suitable type of bridge will be recommended based on different
+                factors such as location of the missing teeth and condition of adjacent teeth and gums. Your subsequent
+                visit will involve preparing the teeth, the prepared teeth will be digitally scanned and sent to our lab. Once
+                your bridge is ready it will be placed and minor adjacements made for proper fit.
               </p>
               <p>
-              Dental bridges offer numerous benefits beyond filling the gaps caused by missing teeth. They restore
-your ability to chew and speak properly, maintain the shape of your face, and prevent the surrounding
-teeth from shifting out of position. Dental bridges also enhance your smile, boosting self-confidence and
-oral health.
+                Dental bridges offer numerous benefits beyond filling the gaps caused by missing teeth. They restore
+                your ability to chew and speak properly, maintain the shape of your face, and prevent the surrounding
+                teeth from shifting out of position. Dental bridges also enhance your smile, boosting self-confidence and
+                oral health.
               </p>
               <p>Remember to consult our trusted dentists for your personalised treatment options.</p>
             </>
@@ -532,27 +534,27 @@ oral health.
           body: (
             <>
               <p>
-              Dental dentures are removable prosthetic devices that replace missing teeth and surrounding tissues.
-Missing teeth affect not just your appearance but also your ability to chew food properly. Properly chewed
-food allows your body to easily extract a large amount of nutrients it needs to sustain a healthy body and
-mind.
+                Dental dentures are removable prosthetic devices that replace missing teeth and surrounding tissues.
+                Missing teeth affect not just your appearance but also your ability to chew food properly. Properly chewed
+                food allows your body to easily extract a large amount of nutrients it needs to sustain a healthy body and
+                mind.
               </p>
               <p>
-              Dentures will restore your ability to grind your food so your body does not need to work too hard to
-absorb nutrients. They will also restore your vibrant smile and your youthfull appearance by supporting
-your facial muscles.
+                Dentures will restore your ability to grind your food so your body does not need to work too hard to
+                absorb nutrients. They will also restore your vibrant smile and your youthfull appearance by supporting
+                your facial muscles.
               </p>
 
               <p><em>Partial Dentures</em></p>
               <p>
-              Partial dentures like complete dentures are removable prothesis designed to replace missing teeth .
-These are recommended by your dentist if you are not a candidate for a bridge or implants and just lke
-the complete dentures, they restore your dazzling smile and allow you to chew your food properly and
-thoroughly.
+                Partial dentures like complete dentures are removable prothesis designed to replace missing teeth .
+                These are recommended by your dentist if you are not a candidate for a bridge or implants and just lke
+                the complete dentures, they restore your dazzling smile and allow you to chew your food properly and
+                thoroughly.
               </p>
               <p>
-              The dentists at Sinai provide excellent consultation and will present available options for replacing your
-              missing teeth. Our unwavering commitment is to your oral health and your overall well being.
+                The dentists at Sinai provide excellent consultation and will present available options for replacing your
+                missing teeth. Our unwavering commitment is to your oral health and your overall well being.
               </p>
             </>
           )
@@ -569,13 +571,13 @@ thoroughly.
           body: (
             <>
               <p>
-              Dental emergencies require prompt attention to prevent complications and alleviate pain. Whether its a
-chipped tooth, knocked out tooth, broken jaw, loose artificial tooth, Bleeding, swollen jaw, all these can
-cause excruciating pain.
+                Dental emergencies require prompt attention to prevent complications and alleviate pain. Whether its a
+                chipped tooth, knocked out tooth, broken jaw, loose artificial tooth, Bleeding, swollen jaw, all these can
+                cause excruciating pain.
               </p>
               <p>
-              We understand that you need to see a dentist urgently and therefore encourage you to call Sinai for
-              appropriate care for your emergency. We handle your emergency with compassion and skill.
+                We understand that you need to see a dentist urgently and therefore encourage you to call Sinai for
+                appropriate care for your emergency. We handle your emergency with compassion and skill.
               </p>
             </>
           )
@@ -594,7 +596,7 @@ cause excruciating pain.
   }
 
   const showContent = (index) => () => {
-    if(index == showHeadingContent) {
+    if (index == showHeadingContent) {
       setShowHeadingContent(false);
       return
     }
@@ -608,44 +610,49 @@ cause excruciating pain.
           <div className="row justify-content-center">
             <div className="col-12 col-md-8">
               <p>
-                We offer a full range of treatment and services within the
-                practice, ranging from preventative services, to cosmetic
-                treatments and skin treatments. We use the latest in dental
-                technology, and our chair side monitors and intra-oral cameras
-                let you see what the dentist can see. Our digital x-rays allow
-                us to reduce radiation, keeping patient safety and well being a
-                priority.
-                <u className="position-relative"> 
-                  View our Before & After Gallery
-                  <small style={{fontWeight: 300}} className="position-absolute top-0 right-0 badge rounded-pill bg-secondary">Coming Soon</small>
+                We offer a full range of treatments and services within the
+                practice, from essential preventative services to advanced cosmetic
+                and skin treatments.
+              </p>
+              <p>
+                We stay at the forefront of dental technology. Using our state-of-the-art chair side monitors and intra-oral cameras that let you see what the dentist sees - deepening your understanding of your treatment. We also use digital x-rays, reducing radiation exposure to prioritize your safety and well being.
+              </p>
+              <p>
+                To see the transformative results of our care, explore our
+                <u className="position-relative px-2">
+                  <strong>
+                    View our Before & After Gallery
+                    <small style={{ fontWeight: 300 }} className="position-absolute top-0 right-0 badge rounded-pill bg-secondary">Coming Soon</small>
+                  </strong>
                 </u>
               </p>
             </div>
           </div>
         </section>
+      </div>
 
-        <section className="services">
+      {/* <section className="services">
           <div className="row justify-content-center">
             <div className="cols-12 col-md-10">
               {services.map((categoryEl, i) => (
-                <div className={`service-category ${selectedCategoryKey? '': 'ms-5'}`} key={i}>
+                <div className={`service-category ${selectedCategoryKey ? '' : 'ms-5'}`} key={i}>
                   <h3
                     className="text-uppercase heading-3 category-title"
                     onClick={toggleCategory(categoryEl.key)}
                   >
-                  <FontAwesomeIcon icon={faLocationArrow}
-                    className={`rotate-icon ${selectedCategoryKey === categoryEl.key ? "rotated" : ""}`}
-                  ></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faLocationArrow}
+                      className={`rotate-icon ${selectedCategoryKey === categoryEl.key ? "rotated" : ""}`}
+                    ></FontAwesomeIcon>
                     {categoryEl.category}
                   </h3>
 
                   {selectedCategoryKey === categoryEl.key &&
                     categoryEl.content.map((service, j) => (
                       <div className="service" key={j}>
-                        
+
                         <h4 className="text-capitalize heading-4 service-heading" onClick={showContent(j)} >
-                          <FontAwesomeIcon 
-                            icon={(showHeadingContent == j) ? faCaretDown : faCaretRight} 
+                          <FontAwesomeIcon
+                            icon={(showHeadingContent == j) ? faCaretDown : faCaretRight}
                           ></FontAwesomeIcon>
                           {service.title}
                         </h4>
@@ -656,8 +663,181 @@ cause excruciating pain.
               ))}
             </div>
           </div>
-        </section>
-      </div>
+        </section> */}
+
+      <section id="services">
+        {/* <div className="container-fluid">
+          <div className="row row-cols-lg-3 bento-grid">
+
+            <div className="col-12 col-md bg-info bento-col">
+              <div className="row flex-column h-100">
+                <div className="col-12"><figure>
+                  <img
+                    src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                    alt="" srcset=""
+                    className="img-fluid"
+                  />
+                  <figcaption>
+                    <h3>Cosmetic</h3>
+                    <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                  </figcaption>
+                </figure>
+                </div>
+                <div className="col-12"><figure>
+                  <img
+                    src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                    alt="" srcset=""
+                    className="img-fluid"
+                  />
+                  <figcaption>
+                    <h3>Cosmetic</h3>
+                    <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                  </figcaption>
+                </figure>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-lg bg-warning bento-col flex-nowrap">
+              <div className="row h-100">
+                <div className="col-12 flex-third">
+                  <div className="row">
+                    <div className="col-8">
+                      <figure>
+                        <img
+                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                          alt="" srcset=""
+                          className="img-fluid"
+                        />
+                        <figcaption>
+                          <h3>Cosmetic</h3>
+                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div className="col-4">
+                      <figure>
+                        <img
+                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                          alt="" srcset=""
+                          className="img-fluid"
+                        />
+                        <figcaption>
+                          <h3>Cosmetic</h3>
+                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                        </figcaption>
+                      </figure></div>
+                  </div>
+                </div>
+                <div className="col-12 flex-half">
+                  <div className="row">
+                    <div className="col-12">
+                      <figure>
+                        <img
+                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                          alt="" srcset=""
+                          className="img-fluid"
+                        />
+                        <figcaption>
+                          <h3>Cosmetic</h3>
+                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                        </figcaption>
+                      </figure></div>
+                  </div>
+                </div>
+                <div className="col-12 flex-sixth">
+                  <div className="row h-100">
+                    <div className="col-3">
+                      <figure>
+                        <img
+                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                          alt="" srcset=""
+                          className="img-fluid"
+                        />
+                        <caption>
+                          <h3>Cosmetic</h3>
+                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                        </caption>
+                      </figure>
+                    </div>
+                    <div className="col-6">
+                      <figure>
+                        <img
+                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                          alt="" srcset=""
+                          className="img-fluid"
+                        />
+                        <caption>
+                          <h3>Cosmetic</h3>
+                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                        </caption>
+                      </figure>
+                    </div>
+                    <div className="col-3">
+                      <figure>
+                        <img
+                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                          alt="" srcset=""
+                          className="img-fluid"
+                        />
+                        <caption>
+                          <h3>Cosmetic</h3>
+                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                        </caption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col bg-secondary bento-col">
+              <div className="row h-100">
+                <div className="col-6 col-lg-12">
+                  <figure>
+                    <img
+                      src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                      alt="" srcset=""
+                      className="img-fluid"
+                    />
+                    <caption>
+                      <h3>Cosmetic</h3>
+                      <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                    </caption>
+                  </figure>
+                </div>
+                <div className="col-6 col-lg-12">
+                  <figure>
+                    <img
+                      src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                      alt="" srcset=""
+                      className="img-fluid"
+                    />
+                    <caption>
+                      <h3>Cosmetic</h3>
+                      <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                    </caption>
+                  </figure>
+                </div>
+                <div className="col-12 col-lg-12">
+                  <figure>
+                    <img
+                      src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
+                      alt="" srcset=""
+                      className="img-fluid"
+                    />
+                    <caption>
+                      <h3>Cosmetic</h3>
+                      <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
+                    </caption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+        <BentoGrid />
+      </section >
     </>
   );
 };
