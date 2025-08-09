@@ -1,15 +1,9 @@
-"use client";
-
 import Image from "next/image";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretRight, faCaretDown, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import Banner from "@/components/ui/Banner";
 import bannerImg from "@img/office/room2_chair.jpg";
-// import bannerImg from "@img/office/room1_01.jpg";
+
 import dentalImg from "@img/illustrations/dental-bridges.jpg";
 import BentoGrid from "@/components/ui/BentoGrid";
-
 
 const Services = () => {
 
@@ -605,8 +599,8 @@ const Services = () => {
   return (
     <>
       <Banner image={bannerImg} message={'Services'} />
-      <div className="container-fluid container-md">
-        <section className="services-summary">
+      <section className="services-summary">
+        <div className="container-fluid container-md">
           <div className="row justify-content-center">
             <div className="col-12 col-md-8">
               <p>
@@ -628,214 +622,10 @@ const Services = () => {
               </p>
             </div>
           </div>
-        </section>
-      </div>
-
-      {/* <section className="services">
-          <div className="row justify-content-center">
-            <div className="cols-12 col-md-10">
-              {services.map((categoryEl, i) => (
-                <div className={`service-category ${selectedCategoryKey ? '' : 'ms-5'}`} key={i}>
-                  <h3
-                    className="text-uppercase heading-3 category-title"
-                    onClick={toggleCategory(categoryEl.key)}
-                  >
-                    <FontAwesomeIcon icon={faLocationArrow}
-                      className={`rotate-icon ${selectedCategoryKey === categoryEl.key ? "rotated" : ""}`}
-                    ></FontAwesomeIcon>
-                    {categoryEl.category}
-                  </h3>
-
-                  {selectedCategoryKey === categoryEl.key &&
-                    categoryEl.content.map((service, j) => (
-                      <div className="service" key={j}>
-
-                        <h4 className="text-capitalize heading-4 service-heading" onClick={showContent(j)} >
-                          <FontAwesomeIcon
-                            icon={(showHeadingContent == j) ? faCaretDown : faCaretRight}
-                          ></FontAwesomeIcon>
-                          {service.title}
-                        </h4>
-                        {(showHeadingContent == j) && <div className="service-content">{service.body}</div>}
-                      </div>
-                    ))}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section> */}
+        </div >
+      </section>
 
       <section id="services">
-        {/* <div className="container-fluid">
-          <div className="row row-cols-lg-3 bento-grid">
-
-            <div className="col-12 col-md bg-info bento-col">
-              <div className="row flex-column h-100">
-                <div className="col-12"><figure>
-                  <img
-                    src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                    alt="" srcset=""
-                    className="img-fluid"
-                  />
-                  <figcaption>
-                    <h3>Cosmetic</h3>
-                    <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                  </figcaption>
-                </figure>
-                </div>
-                <div className="col-12"><figure>
-                  <img
-                    src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                    alt="" srcset=""
-                    className="img-fluid"
-                  />
-                  <figcaption>
-                    <h3>Cosmetic</h3>
-                    <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                  </figcaption>
-                </figure>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-lg bg-warning bento-col flex-nowrap">
-              <div className="row h-100">
-                <div className="col-12 flex-third">
-                  <div className="row">
-                    <div className="col-8">
-                      <figure>
-                        <img
-                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                          alt="" srcset=""
-                          className="img-fluid"
-                        />
-                        <figcaption>
-                          <h3>Cosmetic</h3>
-                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                        </figcaption>
-                      </figure>
-                    </div>
-                    <div className="col-4">
-                      <figure>
-                        <img
-                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                          alt="" srcset=""
-                          className="img-fluid"
-                        />
-                        <figcaption>
-                          <h3>Cosmetic</h3>
-                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                        </figcaption>
-                      </figure></div>
-                  </div>
-                </div>
-                <div className="col-12 flex-half">
-                  <div className="row">
-                    <div className="col-12">
-                      <figure>
-                        <img
-                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                          alt="" srcset=""
-                          className="img-fluid"
-                        />
-                        <figcaption>
-                          <h3>Cosmetic</h3>
-                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                        </figcaption>
-                      </figure></div>
-                  </div>
-                </div>
-                <div className="col-12 flex-sixth">
-                  <div className="row h-100">
-                    <div className="col-3">
-                      <figure>
-                        <img
-                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                          alt="" srcset=""
-                          className="img-fluid"
-                        />
-                        <caption>
-                          <h3>Cosmetic</h3>
-                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                        </caption>
-                      </figure>
-                    </div>
-                    <div className="col-6">
-                      <figure>
-                        <img
-                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                          alt="" srcset=""
-                          className="img-fluid"
-                        />
-                        <caption>
-                          <h3>Cosmetic</h3>
-                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                        </caption>
-                      </figure>
-                    </div>
-                    <div className="col-3">
-                      <figure>
-                        <img
-                          src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                          alt="" srcset=""
-                          className="img-fluid"
-                        />
-                        <caption>
-                          <h3>Cosmetic</h3>
-                          <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                        </caption>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col bg-secondary bento-col">
-              <div className="row h-100">
-                <div className="col-6 col-lg-12">
-                  <figure>
-                    <img
-                      src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                      alt="" srcset=""
-                      className="img-fluid"
-                    />
-                    <caption>
-                      <h3>Cosmetic</h3>
-                      <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                    </caption>
-                  </figure>
-                </div>
-                <div className="col-6 col-lg-12">
-                  <figure>
-                    <img
-                      src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                      alt="" srcset=""
-                      className="img-fluid"
-                    />
-                    <caption>
-                      <h3>Cosmetic</h3>
-                      <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                    </caption>
-                  </figure>
-                </div>
-                <div className="col-12 col-lg-12">
-                  <figure>
-                    <img
-                      src="https://i.pinimg.com/736x/72/5a/1c/725a1c1838b3a2d5d0291bbce9eba411.jpg"
-                      alt="" srcset=""
-                      className="img-fluid"
-                    />
-                    <caption>
-                      <h3>Cosmetic</h3>
-                      <p>Teeth whitening using dental imaging and scans to get the intial shape</p>
-                    </caption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <BentoGrid />
       </section >
     </>
