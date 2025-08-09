@@ -1,6 +1,7 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMessage } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const FloatingButton = () => {
     const text = 'Talk with our Front Desk for your needs';
@@ -10,7 +11,7 @@ const FloatingButton = () => {
                 <a id="#whatsapp-link" href={url} target="_blank" rel="noreferrer"
                 className="floating-btn bg-app-primary-light"
                 data-toggle="tooltip" data-placement="top" title="Booking">
-                    <FontAwesomeIcon icon={faMessage} size="lg"></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faWhatsapp} size="lg"></FontAwesomeIcon>
                 </a>
             </div>
     )
