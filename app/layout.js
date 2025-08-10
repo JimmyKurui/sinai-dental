@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -35,7 +36,9 @@ export default function RootLayout({ children }) {
         </main>
         <FloatingButton />
         <Footer />
-        {/* <BootstrapClient /> */}
+        <Script>
+          import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+        </Script>
       </body>
       <GoogleAnalytics gaId="G-4ZCGYGJZEY" />
     </html>
