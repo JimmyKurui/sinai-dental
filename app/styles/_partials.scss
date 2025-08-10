@@ -14,9 +14,11 @@ button {
 
 a {
     text-decoration: none;
-}
-a:hover {
+    color: #000 !important;
+
+  &:hover {
     color: #{$theme-color-1} !important;
+  }
 }
 
 footer {
