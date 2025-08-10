@@ -30,7 +30,7 @@ const Figure = ({ media }) => (
       <Link href={`services/${media.link}`} >
         <h3>{media.category}</h3>
       </Link>
-      <p>{media.description} Teeth are cleaned using isometric techniques that guarantee preservation of the natural layer at the best retainment rate</p>
+      <p>{media.description}</p>
     </figcaption>
   </figure>
 )
