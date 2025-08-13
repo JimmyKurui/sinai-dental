@@ -1,35 +1,14 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
-export default function BootstrapClient() {
-  const navbarRef = useRef(null);
-  const [isScrolled, setIsScrolled] = useState(false);
-  
+const BootstrapClient = () => {
   useEffect(() => {
-    import('bootstrap/dist/js/bootstrap.bundle.min.js');
-    navbarRef.current = document.querySelector('header .navbar');
-
-    const handleScroll = () => {
-      if (window.scrollY >= window.innerHeight) {
-        setIsScrolled(true);
-        navbarRef.current.classList.add('scrolled');
-      } else {
-        setIsScrolled(false);
-        navbarRef.current.classList.remove('scrolled');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    }
+    import('bootstrap/dist/js/bootstrap.bundle.min.js')
+      .catch(err => console.error('Bootstrap JS load failed:', err));
   }, []);
 
   return null;
-}
+};
 
-
-
+export default BootstrapClient;

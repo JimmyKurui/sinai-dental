@@ -19,6 +19,7 @@ const Figure = ({ media }) => (
       autoPlay
       loop
       muted
+      playsInline
     >
       Your browser does not support the video tag
       <img

@@ -22,7 +22,7 @@ const Team = () => {
   return (
     <>
       <Banner image={stockPhoto} message={"Meet The Team"}>
-        <blockquote className="bg-app-primary-light p-3 ms-md-4 me-md-2 mt-md-3 float-right rotate-45">
+        <blockquote className="bg-app-primary text-app-secondary 0 p-3 ms-md-4 me-md-2 mt-md-3 float-right rotate-15">
           &#8220;Many patients generally have a fear of dentists and so
           when we started Sinai Dental, we wanted to create a safe haven
           where our patients felt comfortable and in control during the
@@ -49,11 +49,11 @@ const Team = () => {
               <Image src={drMatthewImage} alt="Doctor Matthew Rubona" className="img-fluid" />
             </div>
             <div className="team-member-description col-12 col-lg-8">
-              <h3>
+              <h3 className="text-app-primary">
                 <FontAwesomeIcon icon={faUserDoctor} />
                 Dr. Rubona Matthew
               </h3>
-              <h4>Team Lead, President - Uganda Dental Association (UDA)</h4>
+              <h4 className="text-app-primary-dark">Team Lead, President - Uganda Dental Association (UDA)</h4>
               <p>
                 A graduate of College of Health Sciences <strong>Makerere University</strong>, Matthew qualified with a distinction in practice of dentistry - wherein he interned at <strong>Kings College London</strong> and <strong>Queen Mary's University Belfast</strong> Ireland.
               </p>
@@ -74,7 +74,7 @@ const Team = () => {
               <Image src={drCheptoImage} alt="Doctor Cheptoris Ashar" className="img-fluid" />
             </div>
             <div className="team-member-description col-12 col-lg-8">
-              <h3>
+              <h3 className="text-app-primary">
                 <FontAwesomeIcon icon={faUserDoctor} />
                 Dr. Ashar Cheptoris
               </h3>
@@ -98,7 +98,7 @@ const Team = () => {
               <Image src={nursesImage} alt="Nurses Sinai Dental Practice" className="img-fluid" />
             </div>
             <div className="team-member-description col-12 col-lg-8">
-              <h3>
+              <h3 className="text-app-primary">
                 <FontAwesomeIcon icon={faUserNurse} />
                 Nursing Team
               </h3>
@@ -122,7 +122,7 @@ const Team = () => {
               <Image src={frontDeskImage} alt="Eva Sinai Dental Practice" className="img-fluid" />
             </div>
             <div className="team-member-description col-12 col-lg-8">
-              <h3>
+              <h3 className="text-app-primary">
                 <FontAwesomeIcon icon={faUserAstronaut} />
                 Front Desk
               </h3>

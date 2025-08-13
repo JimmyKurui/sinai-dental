@@ -3,11 +3,11 @@ const Banner = ({ image, message, classes = "", children }) => {
     <div className="banner">
       {children}
       <div
-        className="image-wrapper d-flex justify-content-center align-items-center"
+        className={`image-wrapper ${image ? '' : 'colored-box'}  d-flex justify-content-center align-items-center`}
         style={
           image
             ? { backgroundImage: `url(${image?.src})` }
-            : { background: "var(--gradient-color-1)" }
+            : { }
         }
       >
         {message && (

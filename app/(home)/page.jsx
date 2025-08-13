@@ -64,7 +64,7 @@ const Home = () => {
                   href={url}
                   target="_blank"
                   rel="noreferrer"
-                  className="btn bg-app-primary"
+                  className="btn btn-primary"
                 >
                   Book
                 </a>

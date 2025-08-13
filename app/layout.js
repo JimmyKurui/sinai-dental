@@ -6,7 +6,8 @@ import BootstrapClient from './components/BootstrapClient';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButton from './components/ui/FloatingButton';
-import './globals.scss';
+import './style.scss';
+
 
 config.autoAddCss = false
 
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/jpeg" href="@img/sinai-dental-logo.jpg" />
+        <link rel="icon" type="image/jpeg" href="img/sinai-dental-logo.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow, noimagefollow" />
         <meta name="geo.region" content="UG-KA" /> 
@@ -36,9 +37,7 @@ export default function RootLayout({ children }) {
         </main>
         <FloatingButton />
         <Footer />
-        <Script>
-          import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-        </Script>
+        <BootstrapClient />
       </body>
       <GoogleAnalytics gaId="G-4ZCGYGJZEY" />
     </html>

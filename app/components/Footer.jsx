@@ -28,8 +28,8 @@ const Footer = () => {
               </address>
               <div className="d-flex">
                   <FontAwesomeIcon icon={faPhone} /> 
-                  <a href="tel:+256(0)776045352">+256 776 045 352</a>/
-                  <a href="tel:+256(0)758601110">+256 758 601 110</a>
+                  <a href="tel:+256(0)776045352">+256 776 045 352</a>
+                  <a className="ps-3" href="tel:+256(0)758601110">+256 758 601 110</a>
               </div>
                   <a href="mailto:sinaident@gmail.com">
                     <FontAwesomeIcon icon={faEnvelope} /> sinaident@gmail.com
@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-12 author text-center mt-3">
-            <kbd><i>Created By: Jimmy Chepkurui {new Date().getFullYear()}</i></kbd>
+            <kbd><em>&copy; {new Date().getFullYear()} Jimmy Chepkurui. All rights reserved</em></kbd>
           </div> 
         </div>
       </div>
